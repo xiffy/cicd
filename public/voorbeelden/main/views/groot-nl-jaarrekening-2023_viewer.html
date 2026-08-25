@@ -1612,15 +1612,13 @@
         <div class="title-content">
           <div class="first-page-title">Voorbeeld rapport 2023</div>
           <div class="first-page-subtitle">
-            <ix:nonNumeric contextRef="context_1" escape="false" id="ID000010" name="bw2-titel9:LegalEntityName">De Grote</ix:nonNumeric>
-            <ix:nonNumeric contextRef="context_1" escape="false" id="ID000020" name="bw2-titel9:LegalEntityLegalForm">B.V.</ix:nonNumeric>
+            <ix:nonNumeric contextRef="context_1" escape="false" id="ID000010" name="bw2-titel9:LegalEntityName">De Grote <ix:nonNumeric contextRef="context_1" escape="false" id="ID000020" name="bw2-titel9:LegalEntityLegalForm">B.V.</ix:nonNumeric></ix:nonNumeric>
           </div>
           <div class="first-page-subtitle">
             <ix:nonNumeric contextRef="context_1" escape="false" id="ID000030" name="bw2-titel9:LegalEntityRegisteredOffice">Statutaire vestigingsplaats</ix:nonNumeric>
           </div>
           <ix:nonNumeric contextRef="context_1" format="ixt:fixed-true" id="ID000050" name="kvk:LegalEntitySizeLarge"></ix:nonNumeric>
-          <ix:nonNumeric contextRef="context_1" format="ixt:fixed-true" id="ID000080" name="rj:FinancialStatementsConsolidated"></ix:nonNumeric>
-        </div>
+    </div>
       </div>
       <div class="date">
         <div class="date-line"></div>
@@ -1628,8 +1626,7 @@
           <p>d.d. maand 2024</p>
           <p> Kamer van Koophandel nr. <ix:nonNumeric contextRef="context_1" escape="false" id="ID000040" name="bw2-titel9:ChamberOfCommerceRegistrationNumber">12345678</ix:nonNumeric>
           </p>
-          <p>Vastgesteld door de algemene vergadering op <ix:nonNumeric contextRef="context_1" format="ixt:date-day-monthname-year-nl" id="ID0000100" name="bw2-titel9:DocumentAdoptionDate">19 maart 2024</ix:nonNumeric>
-            <ix:nonNumeric contextRef="context_1" format="ixt:fixed-true" id="ID000090" name="bw2-titel9:DocumentAdoptionStatus"></ix:nonNumeric>
+          <p><ix:nonNumeric contextRef="context_1" format="ixt:fixed-true" id="ID000090" name="bw2-titel9:DocumentAdoptionStatus">Vastgesteld door de algemene vergadering</ix:nonNumeric> op <ix:nonNumeric contextRef="context_1" format="ixt:date-day-monthname-year-nl" id="ID0000100" name="bw2-titel9:DocumentAdoptionDate">19 maart 2024</ix:nonNumeric>
           </p>
         </div>
       </div>
@@ -1676,7 +1673,7 @@
       <div class="header-line"></div>
     </div>
     <div class="content">
-      <h1 id="financial-statements">Jaarrekening 2023</h1>
+      <h1 id="financial-statements"><ix:nonNumeric contextRef="context_1" format="ixt:fixed-true" id="ID000080" name="rj:FinancialStatementsConsolidated">Jaarrekening 2023</ix:nonNumeric></h1>
     </div>
     <div class="footer">
       <div class="footer-content"></div>
@@ -1691,7 +1688,7 @@
     <div class="content">
       <h1 id="consolidated-balance-sheet">Geconsolideerde balans per <ix:nonNumeric contextRef="context_1" format="ixt:date-day-monthname-year-nl" id="ID0000060" name="bw2-titel9:FinancialReportingPeriodEndDate">31 december 2023</ix:nonNumeric>
       </h1>
-      <p>(voor resultaatbestemming)<ix:nonNumeric contextRef="context_3" format="ixt:fixed-true" id="ID000120" name="bw2-titel9:BalanceSheetBeforeAppropriationResults"></ix:nonNumeric>
+      <p>(<ix:nonNumeric contextRef="context_3" format="ixt:fixed-true" id="ID000120" name="bw2-titel9:BalanceSheetBeforeAppropriationResults">voor resultaatbestemming</ix:nonNumeric>)
       </p>
       <table class="annotated col-s table-full">
         <colgroup>
@@ -3569,11 +3566,15 @@
             <td></td>
             <td></td>
             <td></td>
-            <td>0</td>
+            <td>
+              <ix:nonFraction contextRef="context_3" decimals="-3" format="ixt:num-dot-decimal" id="ID0002585" name="groot:CashFlowOperatingActivitiesSubtotal" scale="3" unitRef="EUR">0</ix:nonFraction>
+            </td>
             <td></td>
             <td></td>
             <td></td>
-            <td>0</td>
+            <td>
+              <ix:nonFraction contextRef="context_4" decimals="-3" format="ixt:num-dot-decimal" id="ID0002595" name="groot:CashFlowOperatingActivitiesSubtotal" scale="3" unitRef="EUR">0</ix:nonFraction>
+            </td>
           </tr>
           <tr class="empty-row sub-total">
             <td></td>
@@ -9187,9 +9188,7 @@
             <td></td>
             <td></td>
             <td></td>
-            <td>
-              <ix:nonFraction contextRef="context_5" decimals="-3" format="ixt:num-dot-decimal" id="ID0003730" name="bw2-titel9:FinancialAssets" scale="3" unitRef="EUR">0</ix:nonFraction>
-            </td>
+            <td>0</td>
           </tr>
           <tr>
             <td>2025</td>
@@ -9199,9 +9198,7 @@
             <td></td>
             <td></td>
             <td></td>
-            <td>
-              <ix:nonFraction contextRef="context_5" decimals="-3" format="ixt:num-dot-decimal" id="ID0003740" name="bw2-titel9:FinancialAssets" scale="3" unitRef="EUR">0</ix:nonFraction>
-            </td>
+            <td>0</td>
           </tr>
           <tr>
             <td>2026</td>
@@ -9211,9 +9208,7 @@
             <td></td>
             <td></td>
             <td></td>
-            <td>
-              <ix:nonFraction contextRef="context_5" decimals="-3" format="ixt:num-dot-decimal" id="ID0003750" name="bw2-titel9:FinancialAssets" scale="3" unitRef="EUR">0</ix:nonFraction>
-            </td>
+            <td>0</td>
           </tr>
           <tr>
             <td>2027</td>
@@ -9223,9 +9218,7 @@
             <td></td>
             <td></td>
             <td></td>
-            <td>
-              <ix:nonFraction contextRef="context_5" decimals="-3" format="ixt:num-dot-decimal" id="ID0003760" name="bw2-titel9:FinancialAssets" scale="3" unitRef="EUR">0</ix:nonFraction>
-            </td>
+            <td>0</td>
           </tr>
           <tr>
             <td>2028</td>
@@ -9235,9 +9228,7 @@
             <td></td>
             <td></td>
             <td></td>
-            <td>
-              <ix:nonFraction contextRef="context_5" decimals="-3" format="ixt:num-dot-decimal" id="ID0003770" name="bw2-titel9:FinancialAssets" scale="3" unitRef="EUR">0</ix:nonFraction>
-            </td>
+            <td>0</td>
           </tr>
           <tr>
             <td>2029</td>
@@ -9247,9 +9238,7 @@
             <td></td>
             <td></td>
             <td></td>
-            <td>
-              <ix:nonFraction contextRef="context_5" decimals="-3" format="ixt:num-dot-decimal" id="ID0003780" name="bw2-titel9:FinancialAssets" scale="3" unitRef="EUR">0</ix:nonFraction>
-            </td>
+            <td>0</td>
           </tr>
           <tr class="empty-row">
             <td colspan="8"></td>
@@ -10252,13 +10241,9 @@
           </tr>
           <tr>
             <td>Totaal</td>
-            <td>
-              <ix:nonFraction contextRef="context_2" decimals="-3" format="ixt:num-dot-decimal" id="ID0004070" name="bw2-titel9:SecuritiesCurrent" scale="3" unitRef="EUR">0</ix:nonFraction>
-            </td>
+            <td>0</td>
             <td></td>
-            <td>
-              <ix:nonFraction contextRef="context_5" decimals="-3" format="ixt:num-dot-decimal" id="ID0004080" name="bw2-titel9:SecuritiesCurrent" scale="3" unitRef="EUR">0</ix:nonFraction>
-            </td>
+            <td>0</td>
           </tr>
           <tr class="empty-row total">
             <td></td>
@@ -22689,77 +22674,77 @@
           <tr>
             <td>Gestort en opgevraagd aandelenkapitaal</td>
             <td></td>
-            <td>0</td>
+            <td><ix:nonFraction contextRef="context_02" decimals="-3" format="ixt:num-dot-decimal" id="ID0010090" name="bw2-titel9:ShareCapitalPaidCalledUp" scale="3" unitRef="EUR">0</ix:nonFraction></td>
             <td></td>
             <td></td>
             <td></td>
-            <td>0</td>
+            <td><ix:nonFraction contextRef="context_05" decimals="-3" format="ixt:num-dot-decimal" id="ID0010100" name="bw2-titel9:ShareCapitalPaidCalledUp" scale="3" unitRef="EUR">0</ix:nonFraction></td>
             <td></td>
             <td></td>
           </tr>
           <tr>
             <td>Agio</td>
             <td></td>
-            <td>0</td>
+            <td><ix:nonFraction contextRef="context_02" decimals="-3" format="ixt:num-dot-decimal" id="ID0010110" name="bw2-titel9:SharePremium" scale="3" unitRef="EUR">0</ix:nonFraction></td>
             <td></td>
             <td></td>
             <td></td>
-            <td>0</td>
+            <td><ix:nonFraction contextRef="context_05" decimals="-3" format="ixt:num-dot-decimal" id="ID0010120" name="bw2-titel9:SharePremium" scale="3" unitRef="EUR">0</ix:nonFraction></td>
             <td></td>
             <td></td>
           </tr>
           <tr>
             <td>Herwaarderingsreserves</td>
             <td></td>
-            <td>0</td>
+            <td><ix:nonFraction contextRef="context_02" decimals="-3" format="ixt:num-dot-decimal" id="ID0010130" name="bw2-titel9:RevaluationReserve" scale="3" unitRef="EUR">0</ix:nonFraction></td>
             <td></td>
             <td></td>
             <td></td>
-            <td>0</td>
+            <td><ix:nonFraction contextRef="context_05" decimals="-3" format="ixt:num-dot-decimal" id="ID0010140" name="bw2-titel9:RevaluationReserve" scale="3" unitRef="EUR">0</ix:nonFraction></td>
             <td></td>
             <td></td>
           </tr>
           <tr>
             <td>Andere wettelijke reserves</td>
             <td></td>
-            <td>0</td>
+            <td><ix:nonFraction contextRef="context_02" decimals="-3" format="ixt:num-dot-decimal" id="ID0010150" name="bw2-titel9:LegalReserves" scale="3" unitRef="EUR">0</ix:nonFraction></td>
             <td></td>
             <td></td>
             <td></td>
-            <td>0</td>
+            <td><ix:nonFraction contextRef="context_05" decimals="-3" format="ixt:num-dot-decimal" id="ID0010160" name="bw2-titel9:LegalReserves" scale="3" unitRef="EUR">0</ix:nonFraction></td>
             <td></td>
             <td></td>
           </tr>
           <tr>
             <td>Statutaire reserves</td>
             <td></td>
-            <td>0</td>
+            <td><ix:nonFraction contextRef="context_02" decimals="-3" format="ixt:num-dot-decimal" id="ID0010170" name="bw2-titel9:StatutoryReserves" scale="3" unitRef="EUR">0</ix:nonFraction></td>
             <td></td>
             <td></td>
             <td></td>
-            <td>0</td>
+            <td><ix:nonFraction contextRef="context_05" decimals="-3" format="ixt:num-dot-decimal" id="ID0010180" name="bw2-titel9:StatutoryReserves" scale="3" unitRef="EUR">0</ix:nonFraction></td>
             <td></td>
             <td></td>
           </tr>
           <tr>
             <td>Financiële instrumenten die op basis van de economische realiteit als vreemd vermogen zouden worden verantwoord</td>
             <td></td>
-            <td>0</td>
+            <td><ix:nonFraction contextRef="context_02" decimals="-3" format="ixt:num-dot-decimal" id="ID0010190" name="groot:FinancialInstrumentsEconomicRealityClassifiedAsLiability" scale="3" unitRef="EUR">0</ix:nonFraction></td>
             <td></td>
             <td></td>
             <td></td>
-            <td>0</td>
+            <td><ix:nonFraction contextRef="context_05" decimals="-3" format="ixt:num-dot-decimal" id="ID0010200" name="groot:FinancialInstrumentsEconomicRealityClassifiedAsLiability" scale="3" unitRef="EUR">0</ix:nonFraction></td>
             <td></td>
             <td></td>
           </tr>
           <tr>
             <td>Overige reserves</td>
             <td></td>
-            <td>0</td>
+            <td><ix:nonFraction contextRef="context_02" decimals="-3" format="ixt:num-dot-decimal" id="ID0010210" name="bw2-titel9:ReservesOther" scale="3" unitRef="EUR">0</ix:nonFraction></td>
             <td></td>
             <td></td>
             <td></td>
-            <td>0</td>
+            <td><ix:nonFraction contextRef="context_05" decimals="-3" format="ixt:num-dot-decimal" id="ID0010220" name="bw2-titel9:ReservesOther" scale="3" unitRef="EUR">0</ix:nonFraction></td>
             <td></td>
             <td></td>
           </tr>
@@ -22779,15 +22764,15 @@
             <td></td>
           </tr>
           <tr>
-            <td>Totaal van eigen vermogen</td>
+            <td>Sub-totaal van eigen vermogen</td>
             <td></td>
             <td></td>
             <td></td>
-            <td>0</td>
+            <td><ix:nonFraction contextRef="context_02" decimals="-3" format="ixt:num-dot-decimal" id="ID0010230" name="groot:EquitySubtotal" scale="3" unitRef="EUR">0</ix:nonFraction></td>
             <td></td>
             <td></td>
             <td></td>
-            <td>0</td>
+            <td><ix:nonFraction contextRef="context_05" decimals="-3" format="ixt:num-dot-decimal" id="ID0010240" name="groot:EquitySubtotal" scale="3" unitRef="EUR">0</ix:nonFraction></td>
           </tr>
           <tr class="empty-row">
             <td colspan="7"></td>
@@ -22797,44 +22782,44 @@
               <h2>Resultaat na belastingen van het boekjaar</h2>
             </td>
             <td></td>
-            <td>0</td>
+            <td><ix:nonFraction contextRef="context_02" decimals="-3" format="ixt:num-dot-decimal" id="ID0010250" name="bw2-titel9:ResultForTheYear" scale="3" unitRef="EUR">0</ix:nonFraction></td>
             <td></td>
             <td></td>
             <td></td>
-            <td>0</td>
+            <td><ix:nonFraction contextRef="context_05" decimals="-3" format="ixt:num-dot-decimal" id="ID0010260" name="bw2-titel9:ResultForTheYear" scale="3" unitRef="EUR">0</ix:nonFraction></td>
             <td></td>
             <td></td>
           </tr>
           <tr>
             <td class="non-list-bullet">preferent dividend</td>
             <td></td>
-            <td class="negative">0</td>
+            <td class="negative"><ix:nonFraction contextRef="context_02" decimals="-3" format="ixt:num-dot-decimal" id="ID0010270" name="rj:PreferredDividendDeductedFromResultForTheYear" scale="3" unitRef="EUR">0</ix:nonFraction></td>
             <td></td>
             <td></td>
             <td></td>
-            <td class="negative">0</td>
+            <td class="negative"><ix:nonFraction contextRef="context_05" decimals="-3" format="ixt:num-dot-decimal" id="ID0010280" name="rj:PreferredDividendDeductedFromResultForTheYear" scale="3" unitRef="EUR">0</ix:nonFraction></td>
             <td></td>
             <td></td>
           </tr>
           <tr>
             <td class="non-list-bullet">interim-dividend</td>
             <td></td>
-            <td class="negative">0</td>
+            <td class="negative"><ix:nonFraction contextRef="context_02" decimals="-3" format="ixt:num-dot-decimal" id="ID0010290" name="groot:InterimDividendDeductedFromResultForTheYear" scale="3" unitRef="EUR">0</ix:nonFraction></td>
             <td></td>
             <td></td>
             <td></td>
-            <td class="negative">0</td>
+            <td class="negative"><ix:nonFraction contextRef="context_05" decimals="-3" format="ixt:num-dot-decimal" id="ID0010300" name="groot:InterimDividendDeductedFromResultForTheYear" scale="3" unitRef="EUR">0</ix:nonFraction></td>
             <td></td>
             <td></td>
           </tr>
           <tr>
             <td class="non-list-bullet">toevoeging wettelijke reserve</td>
             <td></td>
-            <td class="negative">0</td>
+            <td class="negative"><ix:nonFraction contextRef="context_02" decimals="-3" format="ixt:num-dot-decimal" id="ID0010310" name="groot:TransferToLegalReserveDeductedFromResultForTheYear" scale="3" unitRef="EUR">0</ix:nonFraction></td>
             <td></td>
             <td></td>
             <td></td>
-            <td class="negative">0</td>
+            <td class="negative"><ix:nonFraction contextRef="context_05" decimals="-3" format="ixt:num-dot-decimal" id="ID0010320" name="groot:TransferToLegalReserveDeductedFromResultForTheYear" scale="3" unitRef="EUR">0</ix:nonFraction></td>
             <td></td>
             <td></td>
           </tr>
@@ -22858,11 +22843,11 @@
             <td></td>
             <td></td>
             <td></td>
-            <td>0</td>
+            <td><ix:nonFraction contextRef="context_02" decimals="-3" format="ixt:num-dot-decimal" id="ID0010330" name="bw2-titel9:RetainedEarnings" scale="3" unitRef="EUR">0</ix:nonFraction></td>
             <td></td>
             <td></td>
             <td></td>
-            <td>0</td>
+            <td><ix:nonFraction contextRef="context_05" decimals="-3" format="ixt:num-dot-decimal" id="ID0010340" name="bw2-titel9:RetainedEarnings" scale="3" unitRef="EUR">0</ix:nonFraction></td>
           </tr>
           <tr class="empty-row sub-total">
             <td></td>
@@ -22886,11 +22871,11 @@
             <td></td>
             <td></td>
             <td></td>
-            <td>0</td>
+            <td><ix:nonFraction contextRef="context_02" decimals="-3" format="ixt:num-dot-decimal" id="ID0010350" name="bw2-titel9:Equity" scale="3" unitRef="EUR">0</ix:nonFraction></td>
             <td></td>
             <td></td>
             <td></td>
-            <td>0</td>
+            <td><ix:nonFraction contextRef="context_05" decimals="-3" format="ixt:num-dot-decimal" id="ID0010360" name="bw2-titel9:Equity" scale="3" unitRef="EUR">0</ix:nonFraction></td>
           </tr>
           <tr class="empty-row">
             <td colspan="7"></td>
@@ -32325,15 +32310,15 @@
             <td></td>
             <td></td>
             <td class="negative">
-              <ix:nonFraction contextRef="context_80" decimals="-3" format="ixt:num-dot-decimal" id="ID0009210" name="groot:EquityIterimDividend" scale="3" unitRef="EUR">0</ix:nonFraction>
+              <ix:nonFraction contextRef="context_80" decimals="-3" format="ixt:num-dot-decimal" id="ID0009210" name="groot:EquityInterimDividend" scale="3" unitRef="EUR">0</ix:nonFraction>
             </td>
             <td></td>
             <td class="negative">
-              <ix:nonFraction contextRef="context_81" decimals="-3" format="ixt:num-dot-decimal" id="ID0009220" name="groot:EquityIterimDividend" scale="3" unitRef="EUR">0</ix:nonFraction>
+              <ix:nonFraction contextRef="context_81" decimals="-3" format="ixt:num-dot-decimal" id="ID0009220" name="groot:EquityInterimDividend" scale="3" unitRef="EUR">0</ix:nonFraction>
             </td>
             <td></td>
             <td class="negative">
-              <ix:nonFraction contextRef="context_06" decimals="-3" format="ixt:num-dot-decimal" id="ID0009230" name="groot:EquityIterimDividend" scale="3" unitRef="EUR">0</ix:nonFraction>
+              <ix:nonFraction contextRef="context_06" decimals="-3" format="ixt:num-dot-decimal" id="ID0009230" name="groot:EquityInterimDividend" scale="3" unitRef="EUR">0</ix:nonFraction>
             </td>
           </tr>
           <tr>
@@ -32407,15 +32392,15 @@
             <td></td>
             <td></td>
             <td>
-              <ix:nonFraction contextRef="context_80" decimals="-3" format="ixt:num-dot-decimal" id="ID0009300" name="groot:EquityTransferResultToOrtherReserves" scale="3" unitRef="EUR">0</ix:nonFraction>
+              <ix:nonFraction contextRef="context_80" decimals="-3" format="ixt:num-dot-decimal" id="ID0009300" name="groot:EquityTransferResultToOtherReserves" scale="3" unitRef="EUR">0</ix:nonFraction>
             </td>
             <td></td>
             <td class="negative">
-              <ix:nonFraction contextRef="context_81" decimals="-3" format="ixt:num-dot-decimal" id="ID0009310" name="groot:EquityTransferResultToOrtherReserves" scale="3" sign="-" unitRef="EUR">0</ix:nonFraction>
+              <ix:nonFraction contextRef="context_81" decimals="-3" format="ixt:num-dot-decimal" id="ID0009310" name="groot:EquityTransferResultToOtherReserves" scale="3" sign="-" unitRef="EUR">0</ix:nonFraction>
             </td>
             <td></td>
             <td>
-              <ix:nonFraction contextRef="context_06" decimals="-3" format="ixt:num-dot-decimal" id="ID0009320" name="groot:EquityTransferResultToOrtherReserves" scale="3" unitRef="EUR">0</ix:nonFraction>
+              <ix:nonFraction contextRef="context_06" decimals="-3" format="ixt:num-dot-decimal" id="ID0009320" name="groot:EquityTransferResultToOtherReserves" scale="3" unitRef="EUR">0</ix:nonFraction>
             </td>
           </tr>
           <tr class="empty-row total">
@@ -32884,15 +32869,15 @@
             <td></td>
             <td></td>
             <td class="negative">
-              <ix:nonFraction contextRef="context_86" decimals="-3" format="ixt:num-dot-decimal" id="ID0009910" name="groot:EquityIterimDividend" scale="3" unitRef="EUR">0</ix:nonFraction>
+              <ix:nonFraction contextRef="context_86" decimals="-3" format="ixt:num-dot-decimal" id="ID0009910" name="groot:EquityInterimDividend" scale="3" unitRef="EUR">0</ix:nonFraction>
             </td>
             <td></td>
             <td class="negative">
-              <ix:nonFraction contextRef="context_87" decimals="-3" format="ixt:num-dot-decimal" id="ID0009920" name="groot:EquityIterimDividend" scale="3" unitRef="EUR">0</ix:nonFraction>
+              <ix:nonFraction contextRef="context_87" decimals="-3" format="ixt:num-dot-decimal" id="ID0009920" name="groot:EquityInterimDividend" scale="3" unitRef="EUR">0</ix:nonFraction>
             </td>
             <td></td>
             <td class="negative">
-              <ix:nonFraction contextRef="context_03" decimals="-3" format="ixt:num-dot-decimal" id="ID0009930" name="groot:EquityIterimDividend" scale="3" unitRef="EUR">0</ix:nonFraction>
+              <ix:nonFraction contextRef="context_03" decimals="-3" format="ixt:num-dot-decimal" id="ID0009930" name="groot:EquityInterimDividend" scale="3" unitRef="EUR">0</ix:nonFraction>
             </td>
           </tr>
         </tbody>
@@ -32966,15 +32951,15 @@
               <td></td>
               <td></td>
               <td>
-                <ix:nonFraction contextRef="context_86" decimals="-3" format="ixt:num-dot-decimal" id="ID0010000" name="groot:EquityTransferResultToOrtherReserves" scale="3" unitRef="EUR">0</ix:nonFraction>
+                <ix:nonFraction contextRef="context_86" decimals="-3" format="ixt:num-dot-decimal" id="ID0010000" name="groot:EquityTransferResultToOtherReserves" scale="3" unitRef="EUR">0</ix:nonFraction>
               </td>
               <td></td>
               <td class="negative">
-                <ix:nonFraction contextRef="context_87" decimals="-3" format="ixt:num-dot-decimal" id="ID0010010" name="groot:EquityTransferResultToOrtherReserves" scale="3" sign="-" unitRef="EUR">0</ix:nonFraction>
+                <ix:nonFraction contextRef="context_87" decimals="-3" format="ixt:num-dot-decimal" id="ID0010010" name="groot:EquityTransferResultToOtherReserves" scale="3" sign="-" unitRef="EUR">0</ix:nonFraction>
               </td>
               <td></td>
               <td>
-                <ix:nonFraction contextRef="context_03" decimals="-3" format="ixt:num-dot-decimal" id="ID0010020" name="groot:EquityTransferResultToOrtherReserves" scale="3" unitRef="EUR">0</ix:nonFraction>
+                <ix:nonFraction contextRef="context_03" decimals="-3" format="ixt:num-dot-decimal" id="ID0010020" name="groot:EquityTransferResultToOtherReserves" scale="3" unitRef="EUR">0</ix:nonFraction>
               </td>
             </tr>
             <tr class="empty-row total">
@@ -41702,59 +41687,6 @@
         }
        }
       },
-      "rj:FinancialStatementsConsolidated": {
-       "labels": {
-        "std": {
-         "en": "Consolidated financial statements?",
-         "nl": "Geconsolideerde jaarrekening?"
-        },
-        "doc": {
-         "nl": "Is sprake van een geconsolideerde jaarrekening?"
-        }
-       },
-       "r": [
-        [
-         [
-          "Chapter",
-          "110"
-         ],
-         [
-          "IssueDate",
-          "2023-01-01"
-         ],
-         [
-          "Name",
-          "Richtlijnen voor de jaarverslaggeving"
-         ],
-         [
-          "Paragraph",
-          "103"
-         ],
-         [
-          "Subparagraph",
-          "b"
-         ]
-        ],
-        [
-         [
-          "Chapter",
-          "A1"
-         ],
-         [
-          "IssueDate",
-          "2023-01-01"
-         ],
-         [
-          "Name",
-          "Richtlijnen voor de jaarverslaggeving voor kleine rechtspersonen"
-         ],
-         [
-          "Paragraph",
-          "306"
-         ]
-        ]
-       ]
-      },
       "bw2-titel9:ChamberOfCommerceRegistrationNumber": {
        "labels": {
         "std": {
@@ -41826,81 +41758,6 @@
          [
           "Paragraph",
           "303a"
-         ]
-        ]
-       ]
-      },
-      "bw2-titel9:DocumentAdoptionDate": {
-       "labels": {
-        "std": {
-         "en": "Date of adoption of the financial statements",
-         "nl": "Datum van vaststelling van de jaarrekening",
-         "de": "Datum der Feststellung der Jahresabschl\u00fcsse",
-         "fr": "Date d'adoption des \u00e9tats financiers"
-        },
-        "ns0": {
-         "en": "Date of adoption",
-         "nl": "Datum van vaststelling",
-         "de": "Datum der Feststellung",
-         "fr": "Date d'adoption"
-        },
-        "doc": {
-         "nl": "De datum van vaststelling en goedkeuring van de jaarrekening door de bestuurders en commissarissen."
-        }
-       },
-       "r": [
-        [
-         [
-          "Article",
-          "394"
-         ],
-         [
-          "IssueDate",
-          "2023-01-01"
-         ],
-         [
-          "Name",
-          "Burgerlijk wetboek boek 2"
-         ],
-         [
-          "Paragraph",
-          "1"
-         ]
-        ],
-        [
-         [
-          "Chapter",
-          "396"
-         ],
-         [
-          "IssueDate",
-          "2023-01-01"
-         ],
-         [
-          "Name",
-          "Richtlijnen voor de jaarverslaggeving"
-         ],
-         [
-          "Paragraph",
-          "102"
-         ]
-        ],
-        [
-         [
-          "Chapter",
-          "A6"
-         ],
-         [
-          "IssueDate",
-          "2023-01-01"
-         ],
-         [
-          "Name",
-          "Richtlijnen voor de jaarverslaggeving voor kleine rechtspersonen"
-         ],
-         [
-          "Paragraph",
-          "103"
          ]
         ]
        ]
@@ -42008,6 +41865,134 @@
          [
           "Paragraph",
           "103"
+         ]
+        ]
+       ]
+      },
+      "bw2-titel9:DocumentAdoptionDate": {
+       "labels": {
+        "std": {
+         "en": "Date of adoption of the financial statements",
+         "nl": "Datum van vaststelling van de jaarrekening",
+         "de": "Datum der Feststellung der Jahresabschl\u00fcsse",
+         "fr": "Date d'adoption des \u00e9tats financiers"
+        },
+        "ns0": {
+         "en": "Date of adoption",
+         "nl": "Datum van vaststelling",
+         "de": "Datum der Feststellung",
+         "fr": "Date d'adoption"
+        },
+        "doc": {
+         "nl": "De datum van vaststelling en goedkeuring van de jaarrekening door de bestuurders en commissarissen."
+        }
+       },
+       "r": [
+        [
+         [
+          "Article",
+          "394"
+         ],
+         [
+          "IssueDate",
+          "2023-01-01"
+         ],
+         [
+          "Name",
+          "Burgerlijk wetboek boek 2"
+         ],
+         [
+          "Paragraph",
+          "1"
+         ]
+        ],
+        [
+         [
+          "Chapter",
+          "396"
+         ],
+         [
+          "IssueDate",
+          "2023-01-01"
+         ],
+         [
+          "Name",
+          "Richtlijnen voor de jaarverslaggeving"
+         ],
+         [
+          "Paragraph",
+          "102"
+         ]
+        ],
+        [
+         [
+          "Chapter",
+          "A6"
+         ],
+         [
+          "IssueDate",
+          "2023-01-01"
+         ],
+         [
+          "Name",
+          "Richtlijnen voor de jaarverslaggeving voor kleine rechtspersonen"
+         ],
+         [
+          "Paragraph",
+          "103"
+         ]
+        ]
+       ]
+      },
+      "rj:FinancialStatementsConsolidated": {
+       "labels": {
+        "std": {
+         "en": "Consolidated financial statements?",
+         "nl": "Geconsolideerde jaarrekening?"
+        },
+        "doc": {
+         "nl": "Is sprake van een geconsolideerde jaarrekening?"
+        }
+       },
+       "r": [
+        [
+         [
+          "Chapter",
+          "110"
+         ],
+         [
+          "IssueDate",
+          "2023-01-01"
+         ],
+         [
+          "Name",
+          "Richtlijnen voor de jaarverslaggeving"
+         ],
+         [
+          "Paragraph",
+          "103"
+         ],
+         [
+          "Subparagraph",
+          "b"
+         ]
+        ],
+        [
+         [
+          "Chapter",
+          "A1"
+         ],
+         [
+          "IssueDate",
+          "2023-01-01"
+         ],
+         [
+          "Name",
+          "Richtlijnen voor de jaarverslaggeving voor kleine rechtspersonen"
+         ],
+         [
+          "Paragraph",
+          "306"
          ]
         ]
        ]
@@ -42237,8 +42222,10 @@
       "bw2-titel9:BalanceSheetBeforeAppropriationResults": {
        "labels": {
         "std": {
-         "en": "Balance sheet before or after appropriation of results",
-         "nl": "Balans voor of na resultaatbestemming"
+         "en": "Balance sheet before appropriation of results",
+         "nl": "Balans voor resultaatbestemming",
+         "de": "Bilanz vor der Gewinnverwendung",
+         "fr": "Bilan avant affectation du r\u00e9sultat"
         },
         "doc": {
          "nl": "De vermelding of de bestemming van het resultaat al dan niet in de balans is opgenomen."
@@ -55125,6 +55112,13 @@
         ]
        ]
       },
+      "groot:CashFlowOperatingActivitiesSubtotal": {
+       "labels": {
+        "std": {
+         "nl": "Subtotaal"
+        }
+       }
+      },
       "rj:CashFlowOperatingActivities": {
        "labels": {
         "std": {
@@ -65129,24 +65123,6 @@
         ]
        ]
       },
-      "groot:PreferenceSharesMember": {
-       "labels": {
-        "std": {
-         "nl": "Preferente aandelen"
-        }
-       }
-      },
-      "bw2-titel9:ClassesOfEquityAxis": {
-       "labels": {
-        "std": {
-         "en": "Classes of equity",
-         "nl": "Categorie\u00ebn van eigen vermogen",
-         "de": "Eigenkapitalklassen",
-         "fr": "Classes des fonds propres"
-        }
-       },
-       "d": "e"
-      },
       "bw2-titel9:SeparateMember": {
        "labels": {
         "std": {
@@ -65244,6 +65220,2463 @@
          ]
         ]
        ]
+      },
+      "bw2-titel9:ShareCapitalPaidCalledUp": {
+       "labels": {
+        "std": {
+         "en": "Share capital paid called up",
+         "nl": "Gestort en opgevraagd aandelenkapitaal",
+         "de": "Gef\u00f6rdertes und angefordertes Aktienkapital",
+         "fr": "Capital-actions financ\u00e9 et demand\u00e9"
+        },
+        "doc": {
+         "nl": "Het gestort kapitaal is het in aandelen verdeeld kapitaal dat bij derden (oprichters, aandeelhouders) is geplaatst, en waarvoor de rechtspersoon een vermogensstorting (in geld of in natura) heeft ontvangen. Het opgevraagde kapitaal is het in aandelen verdeeld kapitaal dat bij derden (oprichters, aandeelhouders) is geplaatst, en waarvoor de rechtspersoon nog geen (volledige) vermogensstorting (in geld of in natura) heeft ontvangen, maar wel een (gedeeltelijke) bijstorting heeft opgevraagd. In dit geval heeft de onderneming een directe vordering op de aandeelhouders."
+        }
+       },
+       "r": [
+        [
+         [
+          "Article",
+          "373"
+         ],
+         [
+          "IssueDate",
+          "2023-01-01"
+         ],
+         [
+          "Name",
+          "Burgerlijk wetboek boek 2"
+         ],
+         [
+          "Paragraph",
+          "2"
+         ]
+        ],
+        [
+         [
+          "Chapter",
+          "240"
+         ],
+         [
+          "IssueDate",
+          "2023-01-01"
+         ],
+         [
+          "Name",
+          "Richtlijnen voor de jaarverslaggeving"
+         ],
+         [
+          "Paragraph",
+          "203"
+         ]
+        ]
+       ]
+      },
+      "bw2-titel9:SharePremium": {
+       "labels": {
+        "std": {
+         "en": "Share premium",
+         "nl": "Agio",
+         "de": "Kapitalr\u00fccklage",
+         "fr": "Prime d'\u00e9mission"
+        },
+        "doc": {
+         "nl": "Het deel van de vermogensstorting dat de rechtspersoon boven de nominale waarde van de aandelen heeft ontvangen, of vermogensstortingen die de aandeelhouders hebben gedaan zonder dat zij daarvoor aandelen ontvangen."
+        }
+       },
+       "r": [
+        [
+         [
+          "Article",
+          "1"
+         ],
+         [
+          "IssueDate",
+          "2015-11-01"
+         ],
+         [
+          "Name",
+          "Besluit modellen jaarrekening"
+         ],
+         [
+          "Paragraph",
+          "1"
+         ]
+        ],
+        [
+         [
+          "Article",
+          "1"
+         ],
+         [
+          "IssueDate",
+          "2015-11-01"
+         ],
+         [
+          "Name",
+          "Besluit modellen jaarrekening"
+         ],
+         [
+          "Paragraph",
+          "2"
+         ]
+        ],
+        [
+         [
+          "Article",
+          "16"
+         ],
+         [
+          "IssueDate",
+          "2015-11-01"
+         ],
+         [
+          "Name",
+          "Besluit modellen jaarrekening"
+         ],
+         [
+          "Paragraph",
+          "2"
+         ]
+        ],
+        [
+         [
+          "Article",
+          "16"
+         ],
+         [
+          "IssueDate",
+          "2015-11-01"
+         ],
+         [
+          "Name",
+          "Besluit modellen jaarrekening"
+         ],
+         [
+          "Paragraph",
+          "3"
+         ]
+        ],
+        [
+         [
+          "Article",
+          "16a"
+         ],
+         [
+          "IssueDate",
+          "2015-11-01"
+         ],
+         [
+          "Name",
+          "Besluit modellen jaarrekening"
+         ],
+         [
+          "Paragraph",
+          "2"
+         ]
+        ],
+        [
+         [
+          "Article",
+          "16b"
+         ],
+         [
+          "IssueDate",
+          "2015-11-01"
+         ],
+         [
+          "Name",
+          "Besluit modellen jaarrekening"
+         ],
+         [
+          "Paragraph",
+          "2"
+         ]
+        ],
+        [
+         [
+          "Article",
+          "373"
+         ],
+         [
+          "IssueDate",
+          "2023-01-01"
+         ],
+         [
+          "Name",
+          "Burgerlijk wetboek boek 2"
+         ],
+         [
+          "Paragraph",
+          "1"
+         ],
+         [
+          "Subparagraph",
+          "b"
+         ]
+        ],
+        [
+         [
+          "Article",
+          "396"
+         ],
+         [
+          "IssueDate",
+          "2023-01-01"
+         ],
+         [
+          "Name",
+          "Burgerlijk wetboek boek 2"
+         ],
+         [
+          "Paragraph",
+          "3"
+         ]
+        ],
+        [
+         [
+          "Article",
+          "397"
+         ],
+         [
+          "IssueDate",
+          "2023-01-01"
+         ],
+         [
+          "Name",
+          "Burgerlijk wetboek boek 2"
+         ],
+         [
+          "Paragraph",
+          "5"
+         ]
+        ],
+        [
+         [
+          "Chapter",
+          "240"
+         ],
+         [
+          "IssueDate",
+          "2023-01-01"
+         ],
+         [
+          "Name",
+          "Richtlijnen voor de jaarverslaggeving"
+         ],
+         [
+          "Paragraph",
+          "218"
+         ]
+        ],
+        [
+         [
+          "Chapter",
+          "315"
+         ],
+         [
+          "IssueDate",
+          "2023-01-01"
+         ],
+         [
+          "Name",
+          "Richtlijnen voor de jaarverslaggeving"
+         ],
+         [
+          "Paragraph",
+          "201"
+         ]
+        ],
+        [
+         [
+          "Chapter",
+          "600"
+         ],
+         [
+          "IssueDate",
+          "2023-01-01"
+         ],
+         [
+          "Name",
+          "Richtlijnen voor de jaarverslaggeving"
+         ],
+         [
+          "Paragraph",
+          "108"
+         ]
+        ],
+        [
+         [
+          "Chapter",
+          "605"
+         ],
+         [
+          "IssueDate",
+          "2023-01-01"
+         ],
+         [
+          "Name",
+          "Richtlijnen voor de jaarverslaggeving"
+         ],
+         [
+          "Paragraph",
+          "106"
+         ]
+        ],
+        [
+         [
+          "Chapter",
+          "605"
+         ],
+         [
+          "IssueDate",
+          "2023-01-01"
+         ],
+         [
+          "Name",
+          "Richtlijnen voor de jaarverslaggeving"
+         ],
+         [
+          "Paragraph",
+          "221"
+         ]
+        ],
+        [
+         [
+          "Chapter",
+          "B8"
+         ],
+         [
+          "IssueDate",
+          "2023-01-01"
+         ],
+         [
+          "Name",
+          "Richtlijnen voor de jaarverslaggeving voor kleine rechtspersonen"
+         ],
+         [
+          "Paragraph",
+          "103"
+         ]
+        ],
+        [
+         [
+          "Chapter",
+          "B8"
+         ],
+         [
+          "IssueDate",
+          "2023-01-01"
+         ],
+         [
+          "Name",
+          "Richtlijnen voor de jaarverslaggeving voor kleine rechtspersonen"
+         ],
+         [
+          "Paragraph",
+          "108"
+         ]
+        ],
+        [
+         [
+          "Chapter",
+          "D3.2"
+         ],
+         [
+          "IssueDate",
+          "2023-01-01"
+         ],
+         [
+          "Name",
+          "Richtlijnen voor de jaarverslaggeving voor kleine rechtspersonen"
+         ],
+         [
+          "Paragraph",
+          "303"
+         ]
+        ]
+       ]
+      },
+      "bw2-titel9:RevaluationReserve": {
+       "labels": {
+        "std": {
+         "en": "Revaluation reserves",
+         "nl": "Herwaarderingsreserves",
+         "de": "Neubewertungsr\u00fccklage",
+         "fr": "R\u00e9serve de r\u00e9\u00e9valuation"
+        },
+        "ns1": {
+         "en": "Revaluation reserve at the end of the period",
+         "nl": "Herwaarderingsreserve aan het einde van de periode",
+         "de": "Neubewertungsr\u00fccklage am Ende der Periode",
+         "fr": "R\u00e9serve de r\u00e9\u00e9valuation \u00e0 la fin de la p\u00e9riode"
+        },
+        "ns2": {
+         "en": "Revaluation reserve at the beginning of the period",
+         "nl": "Herwaarderingsreserve aan het begin van de periode",
+         "de": "Neubewertungsr\u00fccklage am Anfang der Periode",
+         "fr": "R\u00e9serve de r\u00e9\u00e9valuation au d\u00e9but de la p\u00e9riode"
+        },
+        "doc": {
+         "nl": "De reserve die de rechtspersoon moet aanhouden met betrekking tot de niet-gerealiseerde waardestijgingen van activa die tegen actuele waarde worden gewaardeerd. De herwaarderingsreserve omvat niet de waardeveranderingen van activa met frequente marktnoteringen die via de winst-en-verliesrekening zijn verwerkt."
+        }
+       },
+       "r": [
+        [
+         [
+          "Article",
+          "1"
+         ],
+         [
+          "IssueDate",
+          "2015-11-01"
+         ],
+         [
+          "Name",
+          "Besluit modellen jaarrekening"
+         ],
+         [
+          "Paragraph",
+          "1"
+         ]
+        ],
+        [
+         [
+          "Article",
+          "1"
+         ],
+         [
+          "IssueDate",
+          "2015-11-01"
+         ],
+         [
+          "Name",
+          "Besluit modellen jaarrekening"
+         ],
+         [
+          "Paragraph",
+          "2"
+         ]
+        ],
+        [
+         [
+          "Article",
+          "16"
+         ],
+         [
+          "IssueDate",
+          "2015-11-01"
+         ],
+         [
+          "Name",
+          "Besluit modellen jaarrekening"
+         ],
+         [
+          "Paragraph",
+          "2"
+         ]
+        ],
+        [
+         [
+          "Article",
+          "16"
+         ],
+         [
+          "IssueDate",
+          "2015-11-01"
+         ],
+         [
+          "Name",
+          "Besluit modellen jaarrekening"
+         ],
+         [
+          "Paragraph",
+          "3"
+         ]
+        ],
+        [
+         [
+          "Article",
+          "16a"
+         ],
+         [
+          "IssueDate",
+          "2015-11-01"
+         ],
+         [
+          "Name",
+          "Besluit modellen jaarrekening"
+         ],
+         [
+          "Paragraph",
+          "2"
+         ]
+        ],
+        [
+         [
+          "Article",
+          "16b"
+         ],
+         [
+          "IssueDate",
+          "2015-11-01"
+         ],
+         [
+          "Name",
+          "Besluit modellen jaarrekening"
+         ],
+         [
+          "Paragraph",
+          "2"
+         ]
+        ],
+        [
+         [
+          "Article",
+          "373"
+         ],
+         [
+          "IssueDate",
+          "2023-01-01"
+         ],
+         [
+          "Name",
+          "Burgerlijk wetboek boek 2"
+         ],
+         [
+          "Paragraph",
+          "1"
+         ],
+         [
+          "Subparagraph",
+          "c"
+         ]
+        ],
+        [
+         [
+          "Article",
+          "390"
+         ],
+         [
+          "IssueDate",
+          "2023-01-01"
+         ],
+         [
+          "Name",
+          "Burgerlijk wetboek boek 2"
+         ]
+        ],
+        [
+         [
+          "Article",
+          "396"
+         ],
+         [
+          "IssueDate",
+          "2023-01-01"
+         ],
+         [
+          "Name",
+          "Burgerlijk wetboek boek 2"
+         ],
+         [
+          "Paragraph",
+          "3"
+         ]
+        ],
+        [
+         [
+          "Article",
+          "397"
+         ],
+         [
+          "IssueDate",
+          "2023-01-01"
+         ],
+         [
+          "Name",
+          "Burgerlijk wetboek boek 2"
+         ],
+         [
+          "Paragraph",
+          "5"
+         ]
+        ],
+        [
+         [
+          "Chapter",
+          "240"
+         ],
+         [
+          "IssueDate",
+          "2023-01-01"
+         ],
+         [
+          "Name",
+          "Richtlijnen voor de jaarverslaggeving"
+         ],
+         [
+          "Paragraph",
+          "222"
+         ]
+        ],
+        [
+         [
+          "Chapter",
+          "240"
+         ],
+         [
+          "IssueDate",
+          "2023-01-01"
+         ],
+         [
+          "Name",
+          "Richtlijnen voor de jaarverslaggeving"
+         ],
+         [
+          "Paragraph",
+          "227"
+         ]
+        ],
+        [
+         [
+          "Chapter",
+          "240"
+         ],
+         [
+          "IssueDate",
+          "2023-01-01"
+         ],
+         [
+          "Name",
+          "Richtlijnen voor de jaarverslaggeving"
+         ],
+         [
+          "Paragraph",
+          "413"
+         ]
+        ],
+        [
+         [
+          "Chapter",
+          "315"
+         ],
+         [
+          "IssueDate",
+          "2023-01-01"
+         ],
+         [
+          "Name",
+          "Richtlijnen voor de jaarverslaggeving"
+         ],
+         [
+          "Paragraph",
+          "201"
+         ]
+        ],
+        [
+         [
+          "Chapter",
+          "600"
+         ],
+         [
+          "IssueDate",
+          "2023-01-01"
+         ],
+         [
+          "Name",
+          "Richtlijnen voor de jaarverslaggeving"
+         ],
+         [
+          "Paragraph",
+          "108"
+         ]
+        ],
+        [
+         [
+          "Chapter",
+          "605"
+         ],
+         [
+          "IssueDate",
+          "2023-01-01"
+         ],
+         [
+          "Name",
+          "Richtlijnen voor de jaarverslaggeving"
+         ],
+         [
+          "Paragraph",
+          "106"
+         ]
+        ],
+        [
+         [
+          "Chapter",
+          "605"
+         ],
+         [
+          "IssueDate",
+          "2023-01-01"
+         ],
+         [
+          "Name",
+          "Richtlijnen voor de jaarverslaggeving"
+         ],
+         [
+          "Paragraph",
+          "221"
+         ]
+        ],
+        [
+         [
+          "Chapter",
+          "630"
+         ],
+         [
+          "IssueDate",
+          "2023-01-01"
+         ],
+         [
+          "Name",
+          "Richtlijnen voor de jaarverslaggeving"
+         ],
+         [
+          "Paragraph",
+          "202"
+         ]
+        ],
+        [
+         [
+          "Chapter",
+          "650"
+         ],
+         [
+          "IssueDate",
+          "2023-01-01"
+         ],
+         [
+          "Name",
+          "Richtlijnen voor de jaarverslaggeving"
+         ],
+         [
+          "Paragraph",
+          "305"
+         ]
+        ],
+        [
+         [
+          "Chapter",
+          "660"
+         ],
+         [
+          "IssueDate",
+          "2023-01-01"
+         ],
+         [
+          "Name",
+          "Richtlijnen voor de jaarverslaggeving"
+         ],
+         [
+          "Paragraph",
+          "303"
+         ]
+        ],
+        [
+         [
+          "Chapter",
+          "B8"
+         ],
+         [
+          "IssueDate",
+          "2023-01-01"
+         ],
+         [
+          "Name",
+          "Richtlijnen voor de jaarverslaggeving voor kleine rechtspersonen"
+         ],
+         [
+          "Paragraph",
+          "103"
+         ]
+        ],
+        [
+         [
+          "Chapter",
+          "B8"
+         ],
+         [
+          "IssueDate",
+          "2023-01-01"
+         ],
+         [
+          "Name",
+          "Richtlijnen voor de jaarverslaggeving voor kleine rechtspersonen"
+         ],
+         [
+          "Paragraph",
+          "109"
+         ]
+        ]
+       ]
+      },
+      "bw2-titel9:LegalReserves": {
+       "labels": {
+        "std": {
+         "en": "Other legal reserves",
+         "nl": "Andere wettelijke reserves",
+         "de": "Sonstige gesetzliche R\u00fccklagen",
+         "fr": "Autres r\u00e9serves l\u00e9gales"
+        },
+        "ns0": {
+         "en": "Lawful reserves",
+         "nl": "Wettelijke reserves",
+         "de": "Gesetzliche Reserven",
+         "fr": "R\u00e9serves l\u00e9gales"
+        },
+        "ns3": {
+         "en": "Total of other legal reserves",
+         "nl": "Totaal van andere wettelijke reserves",
+         "de": "Summe der gesetzlichen R\u00fccklagen",
+         "fr": "Total des autres r\u00e9serves l\u00e9gales"
+        },
+        "doc": {
+         "nl": "De niet-uitkeerbare reserves die de rechtspersoon op grond van de wet moet aanhouden."
+        }
+       },
+       "r": [
+        [
+         [
+          "Article",
+          "1"
+         ],
+         [
+          "IssueDate",
+          "2015-11-01"
+         ],
+         [
+          "Name",
+          "Besluit modellen jaarrekening"
+         ],
+         [
+          "Paragraph",
+          "1"
+         ]
+        ],
+        [
+         [
+          "Article",
+          "8"
+         ],
+         [
+          "IssueDate",
+          "2015-11-01"
+         ],
+         [
+          "Name",
+          "Besluit modellen jaarrekening"
+         ],
+         [
+          "Paragraph",
+          "1"
+         ]
+        ],
+        [
+         [
+          "Article",
+          "16"
+         ],
+         [
+          "IssueDate",
+          "2015-11-01"
+         ],
+         [
+          "Name",
+          "Besluit modellen jaarrekening"
+         ],
+         [
+          "Paragraph",
+          "2"
+         ]
+        ],
+        [
+         [
+          "Article",
+          "16a"
+         ],
+         [
+          "IssueDate",
+          "2015-11-01"
+         ],
+         [
+          "Name",
+          "Besluit modellen jaarrekening"
+         ],
+         [
+          "Paragraph",
+          "2"
+         ]
+        ],
+        [
+         [
+          "Article",
+          "373"
+         ],
+         [
+          "IssueDate",
+          "2023-01-01"
+         ],
+         [
+          "Name",
+          "Burgerlijk wetboek boek 2"
+         ],
+         [
+          "Paragraph",
+          "1"
+         ],
+         [
+          "Subparagraph",
+          "d"
+         ]
+        ],
+        [
+         [
+          "Article",
+          "396"
+         ],
+         [
+          "IssueDate",
+          "2023-01-01"
+         ],
+         [
+          "Name",
+          "Burgerlijk wetboek boek 2"
+         ],
+         [
+          "Paragraph",
+          "3"
+         ]
+        ],
+        [
+         [
+          "Article",
+          "397"
+         ],
+         [
+          "IssueDate",
+          "2023-01-01"
+         ],
+         [
+          "Name",
+          "Burgerlijk wetboek boek 2"
+         ],
+         [
+          "Paragraph",
+          "5"
+         ]
+        ],
+        [
+         [
+          "Chapter",
+          "240"
+         ],
+         [
+          "IssueDate",
+          "2023-01-01"
+         ],
+         [
+          "Name",
+          "Richtlijnen voor de jaarverslaggeving"
+         ],
+         [
+          "Paragraph",
+          "229"
+         ]
+        ],
+        [
+         [
+          "Chapter",
+          "315"
+         ],
+         [
+          "IssueDate",
+          "2023-01-01"
+         ],
+         [
+          "Name",
+          "Richtlijnen voor de jaarverslaggeving"
+         ],
+         [
+          "Paragraph",
+          "201"
+         ]
+        ],
+        [
+         [
+          "Chapter",
+          "600"
+         ],
+         [
+          "IssueDate",
+          "2023-01-01"
+         ],
+         [
+          "Name",
+          "Richtlijnen voor de jaarverslaggeving"
+         ],
+         [
+          "Paragraph",
+          "108"
+         ]
+        ],
+        [
+         [
+          "Chapter",
+          "605"
+         ],
+         [
+          "IssueDate",
+          "2023-01-01"
+         ],
+         [
+          "Name",
+          "Richtlijnen voor de jaarverslaggeving"
+         ],
+         [
+          "Paragraph",
+          "106"
+         ]
+        ],
+        [
+         [
+          "Chapter",
+          "605"
+         ],
+         [
+          "IssueDate",
+          "2023-01-01"
+         ],
+         [
+          "Name",
+          "Richtlijnen voor de jaarverslaggeving"
+         ],
+         [
+          "Paragraph",
+          "221"
+         ]
+        ],
+        [
+         [
+          "Chapter",
+          "630"
+         ],
+         [
+          "IssueDate",
+          "2023-01-01"
+         ],
+         [
+          "Name",
+          "Richtlijnen voor de jaarverslaggeving"
+         ],
+         [
+          "Paragraph",
+          "202"
+         ]
+        ],
+        [
+         [
+          "Chapter",
+          "630"
+         ],
+         [
+          "IssueDate",
+          "2023-01-01"
+         ],
+         [
+          "Name",
+          "Richtlijnen voor de jaarverslaggeving"
+         ],
+         [
+          "Paragraph",
+          "204"
+         ]
+        ],
+        [
+         [
+          "Chapter",
+          "660"
+         ],
+         [
+          "IssueDate",
+          "2023-01-01"
+         ],
+         [
+          "Name",
+          "Richtlijnen voor de jaarverslaggeving"
+         ],
+         [
+          "Paragraph",
+          "303"
+         ]
+        ],
+        [
+         [
+          "Chapter",
+          "B8"
+         ],
+         [
+          "IssueDate",
+          "2023-01-01"
+         ],
+         [
+          "Name",
+          "Richtlijnen voor de jaarverslaggeving voor kleine rechtspersonen"
+         ],
+         [
+          "Paragraph",
+          "103"
+         ]
+        ],
+        [
+         [
+          "Chapter",
+          "B8"
+         ],
+         [
+          "IssueDate",
+          "2023-01-01"
+         ],
+         [
+          "Name",
+          "Richtlijnen voor de jaarverslaggeving voor kleine rechtspersonen"
+         ],
+         [
+          "Paragraph",
+          "113"
+         ]
+        ],
+        [
+         [
+          "Chapter",
+          "D3.2"
+         ],
+         [
+          "IssueDate",
+          "2023-01-01"
+         ],
+         [
+          "Name",
+          "Richtlijnen voor de jaarverslaggeving voor kleine rechtspersonen"
+         ],
+         [
+          "Paragraph",
+          "303"
+         ]
+        ]
+       ]
+      },
+      "bw2-titel9:StatutoryReserves": {
+       "labels": {
+        "std": {
+         "en": "Statutory reserves",
+         "nl": "Statutaire reserves",
+         "de": "Gesetzliche R\u00fccklagen",
+         "fr": "R\u00e9serves l\u00e9gales"
+        },
+        "doc": {
+         "nl": "De reserve die de rechtspersoon op grond van de statuten moet aanhouden."
+        }
+       },
+       "r": [
+        [
+         [
+          "Article",
+          "1"
+         ],
+         [
+          "IssueDate",
+          "2015-11-01"
+         ],
+         [
+          "Name",
+          "Besluit modellen jaarrekening"
+         ],
+         [
+          "Paragraph",
+          "1"
+         ]
+        ],
+        [
+         [
+          "Article",
+          "8"
+         ],
+         [
+          "IssueDate",
+          "2015-11-01"
+         ],
+         [
+          "Name",
+          "Besluit modellen jaarrekening"
+         ],
+         [
+          "Paragraph",
+          "1"
+         ]
+        ],
+        [
+         [
+          "Article",
+          "16"
+         ],
+         [
+          "IssueDate",
+          "2015-11-01"
+         ],
+         [
+          "Name",
+          "Besluit modellen jaarrekening"
+         ],
+         [
+          "Paragraph",
+          "2"
+         ]
+        ],
+        [
+         [
+          "Article",
+          "16a"
+         ],
+         [
+          "IssueDate",
+          "2015-11-01"
+         ],
+         [
+          "Name",
+          "Besluit modellen jaarrekening"
+         ],
+         [
+          "Paragraph",
+          "2"
+         ]
+        ],
+        [
+         [
+          "Article",
+          "373"
+         ],
+         [
+          "IssueDate",
+          "2023-01-01"
+         ],
+         [
+          "Name",
+          "Burgerlijk wetboek boek 2"
+         ],
+         [
+          "Paragraph",
+          "1"
+         ],
+         [
+          "Subparagraph",
+          "e"
+         ]
+        ],
+        [
+         [
+          "Article",
+          "396"
+         ],
+         [
+          "IssueDate",
+          "2023-01-01"
+         ],
+         [
+          "Name",
+          "Burgerlijk wetboek boek 2"
+         ],
+         [
+          "Paragraph",
+          "3"
+         ]
+        ],
+        [
+         [
+          "Article",
+          "397"
+         ],
+         [
+          "IssueDate",
+          "2023-01-01"
+         ],
+         [
+          "Name",
+          "Burgerlijk wetboek boek 2"
+         ],
+         [
+          "Paragraph",
+          "5"
+         ]
+        ],
+        [
+         [
+          "Chapter",
+          "240"
+         ],
+         [
+          "IssueDate",
+          "2023-01-01"
+         ],
+         [
+          "Name",
+          "Richtlijnen voor de jaarverslaggeving"
+         ],
+         [
+          "Paragraph",
+          "233"
+         ]
+        ],
+        [
+         [
+          "Chapter",
+          "315"
+         ],
+         [
+          "IssueDate",
+          "2023-01-01"
+         ],
+         [
+          "Name",
+          "Richtlijnen voor de jaarverslaggeving"
+         ],
+         [
+          "Paragraph",
+          "201"
+         ]
+        ],
+        [
+         [
+          "Chapter",
+          "600"
+         ],
+         [
+          "IssueDate",
+          "2023-01-01"
+         ],
+         [
+          "Name",
+          "Richtlijnen voor de jaarverslaggeving"
+         ],
+         [
+          "Paragraph",
+          "108"
+         ]
+        ],
+        [
+         [
+          "Chapter",
+          "605"
+         ],
+         [
+          "IssueDate",
+          "2023-01-01"
+         ],
+         [
+          "Name",
+          "Richtlijnen voor de jaarverslaggeving"
+         ],
+         [
+          "Paragraph",
+          "106"
+         ]
+        ],
+        [
+         [
+          "Chapter",
+          "605"
+         ],
+         [
+          "IssueDate",
+          "2023-01-01"
+         ],
+         [
+          "Name",
+          "Richtlijnen voor de jaarverslaggeving"
+         ],
+         [
+          "Paragraph",
+          "221"
+         ]
+        ],
+        [
+         [
+          "Chapter",
+          "630"
+         ],
+         [
+          "IssueDate",
+          "2023-01-01"
+         ],
+         [
+          "Name",
+          "Richtlijnen voor de jaarverslaggeving"
+         ],
+         [
+          "Paragraph",
+          "202"
+         ]
+        ],
+        [
+         [
+          "Chapter",
+          "650"
+         ],
+         [
+          "IssueDate",
+          "2023-01-01"
+         ],
+         [
+          "Name",
+          "Richtlijnen voor de jaarverslaggeving"
+         ],
+         [
+          "Paragraph",
+          "305"
+         ]
+        ],
+        [
+         [
+          "Chapter",
+          "660"
+         ],
+         [
+          "IssueDate",
+          "2023-01-01"
+         ],
+         [
+          "Name",
+          "Richtlijnen voor de jaarverslaggeving"
+         ],
+         [
+          "Paragraph",
+          "303"
+         ]
+        ],
+        [
+         [
+          "Chapter",
+          "B8"
+         ],
+         [
+          "IssueDate",
+          "2023-01-01"
+         ],
+         [
+          "Name",
+          "Richtlijnen voor de jaarverslaggeving voor kleine rechtspersonen"
+         ],
+         [
+          "Paragraph",
+          "103"
+         ]
+        ],
+        [
+         [
+          "Chapter",
+          "B8"
+         ],
+         [
+          "IssueDate",
+          "2023-01-01"
+         ],
+         [
+          "Name",
+          "Richtlijnen voor de jaarverslaggeving voor kleine rechtspersonen"
+         ],
+         [
+          "Paragraph",
+          "117"
+         ]
+        ],
+        [
+         [
+          "Chapter",
+          "D3.2"
+         ],
+         [
+          "IssueDate",
+          "2023-01-01"
+         ],
+         [
+          "Name",
+          "Richtlijnen voor de jaarverslaggeving voor kleine rechtspersonen"
+         ],
+         [
+          "Paragraph",
+          "303"
+         ]
+        ]
+       ]
+      },
+      "groot:FinancialInstrumentsEconomicRealityClassifiedAsLiability": {
+       "labels": {
+        "std": {
+         "nl": "Financi\u00eble instrumenten die op basis van de economische realiteit als vreemd vermogen zouden worden verantwoord"
+        }
+       }
+      },
+      "bw2-titel9:ReservesOther": {
+       "labels": {
+        "std": {
+         "en": "Other reserves",
+         "nl": "Overige reserves",
+         "de": "Sonstige R\u00fccklagen",
+         "fr": "Autres r\u00e9serves"
+        },
+        "ns3": {
+         "en": "Total of other reserves",
+         "nl": "Totaal van overige reserves",
+         "de": "Gesamtbetrag der sonstige R\u00fccklagen",
+         "fr": "Total des autres r\u00e9serves"
+        },
+        "doc": {
+         "nl": "Het totaal aan reserves die niet onder de andere categorie\u00ebn reserves vallen en waarvoor geen verplichting bestaat op grond van de wet of de statuten om deze aan te houden."
+        }
+       },
+       "r": [
+        [
+         [
+          "Article",
+          "1"
+         ],
+         [
+          "IssueDate",
+          "2015-11-01"
+         ],
+         [
+          "Name",
+          "Besluit modellen jaarrekening"
+         ],
+         [
+          "Paragraph",
+          "1"
+         ]
+        ],
+        [
+         [
+          "Article",
+          "1"
+         ],
+         [
+          "IssueDate",
+          "2015-11-01"
+         ],
+         [
+          "Name",
+          "Besluit modellen jaarrekening"
+         ],
+         [
+          "Paragraph",
+          "2"
+         ]
+        ],
+        [
+         [
+          "Article",
+          "16"
+         ],
+         [
+          "IssueDate",
+          "2015-11-01"
+         ],
+         [
+          "Name",
+          "Besluit modellen jaarrekening"
+         ],
+         [
+          "Paragraph",
+          "2"
+         ]
+        ],
+        [
+         [
+          "Article",
+          "16"
+         ],
+         [
+          "IssueDate",
+          "2015-11-01"
+         ],
+         [
+          "Name",
+          "Besluit modellen jaarrekening"
+         ],
+         [
+          "Paragraph",
+          "3"
+         ]
+        ],
+        [
+         [
+          "Article",
+          "16a"
+         ],
+         [
+          "IssueDate",
+          "2015-11-01"
+         ],
+         [
+          "Name",
+          "Besluit modellen jaarrekening"
+         ],
+         [
+          "Paragraph",
+          "2"
+         ]
+        ],
+        [
+         [
+          "Article",
+          "16b"
+         ],
+         [
+          "IssueDate",
+          "2015-11-01"
+         ],
+         [
+          "Name",
+          "Besluit modellen jaarrekening"
+         ],
+         [
+          "Paragraph",
+          "2"
+         ]
+        ],
+        [
+         [
+          "Article",
+          "373"
+         ],
+         [
+          "IssueDate",
+          "2023-01-01"
+         ],
+         [
+          "Name",
+          "Burgerlijk wetboek boek 2"
+         ],
+         [
+          "Paragraph",
+          "1"
+         ],
+         [
+          "Subparagraph",
+          "f"
+         ]
+        ],
+        [
+         [
+          "Article",
+          "396"
+         ],
+         [
+          "IssueDate",
+          "2023-01-01"
+         ],
+         [
+          "Name",
+          "Burgerlijk wetboek boek 2"
+         ],
+         [
+          "Paragraph",
+          "3"
+         ]
+        ],
+        [
+         [
+          "Article",
+          "397"
+         ],
+         [
+          "IssueDate",
+          "2023-01-01"
+         ],
+         [
+          "Name",
+          "Burgerlijk wetboek boek 2"
+         ],
+         [
+          "Paragraph",
+          "5"
+         ]
+        ],
+        [
+         [
+          "Chapter",
+          "240"
+         ],
+         [
+          "IssueDate",
+          "2023-01-01"
+         ],
+         [
+          "Name",
+          "Richtlijnen voor de jaarverslaggeving"
+         ],
+         [
+          "Paragraph",
+          "234"
+         ]
+        ],
+        [
+         [
+          "Chapter",
+          "315"
+         ],
+         [
+          "IssueDate",
+          "2023-01-01"
+         ],
+         [
+          "Name",
+          "Richtlijnen voor de jaarverslaggeving"
+         ],
+         [
+          "Paragraph",
+          "201"
+         ]
+        ],
+        [
+         [
+          "Chapter",
+          "600"
+         ],
+         [
+          "IssueDate",
+          "2023-01-01"
+         ],
+         [
+          "Name",
+          "Richtlijnen voor de jaarverslaggeving"
+         ],
+         [
+          "Paragraph",
+          "108"
+         ]
+        ],
+        [
+         [
+          "Chapter",
+          "605"
+         ],
+         [
+          "IssueDate",
+          "2023-01-01"
+         ],
+         [
+          "Name",
+          "Richtlijnen voor de jaarverslaggeving"
+         ],
+         [
+          "Paragraph",
+          "106"
+         ]
+        ],
+        [
+         [
+          "Chapter",
+          "605"
+         ],
+         [
+          "IssueDate",
+          "2023-01-01"
+         ],
+         [
+          "Name",
+          "Richtlijnen voor de jaarverslaggeving"
+         ],
+         [
+          "Paragraph",
+          "221"
+         ]
+        ],
+        [
+         [
+          "Chapter",
+          "610"
+         ],
+         [
+          "IssueDate",
+          "2023-01-01"
+         ],
+         [
+          "Name",
+          "Richtlijnen voor de jaarverslaggeving"
+         ],
+         [
+          "Paragraph",
+          "106"
+         ]
+        ],
+        [
+         [
+          "Chapter",
+          "630"
+         ],
+         [
+          "IssueDate",
+          "2023-01-01"
+         ],
+         [
+          "Name",
+          "Richtlijnen voor de jaarverslaggeving"
+         ],
+         [
+          "Paragraph",
+          "202"
+         ]
+        ],
+        [
+         [
+          "Chapter",
+          "630"
+         ],
+         [
+          "IssueDate",
+          "2023-01-01"
+         ],
+         [
+          "Name",
+          "Richtlijnen voor de jaarverslaggeving"
+         ],
+         [
+          "Paragraph",
+          "207"
+         ]
+        ],
+        [
+         [
+          "Chapter",
+          "640"
+         ],
+         [
+          "IssueDate",
+          "2023-01-01"
+         ],
+         [
+          "Name",
+          "Richtlijnen voor de jaarverslaggeving"
+         ],
+         [
+          "Paragraph",
+          "314"
+         ]
+        ],
+        [
+         [
+          "Chapter",
+          "650"
+         ],
+         [
+          "IssueDate",
+          "2023-01-01"
+         ],
+         [
+          "Name",
+          "Richtlijnen voor de jaarverslaggeving"
+         ],
+         [
+          "Paragraph",
+          "305"
+         ]
+        ],
+        [
+         [
+          "Chapter",
+          "B8"
+         ],
+         [
+          "IssueDate",
+          "2023-01-01"
+         ],
+         [
+          "Name",
+          "Richtlijnen voor de jaarverslaggeving voor kleine rechtspersonen"
+         ],
+         [
+          "Paragraph",
+          "103"
+         ]
+        ],
+        [
+         [
+          "Chapter",
+          "B8"
+         ],
+         [
+          "IssueDate",
+          "2023-01-01"
+         ],
+         [
+          "Name",
+          "Richtlijnen voor de jaarverslaggeving voor kleine rechtspersonen"
+         ],
+         [
+          "Paragraph",
+          "118"
+         ]
+        ],
+        [
+         [
+          "Chapter",
+          "C2"
+         ],
+         [
+          "IssueDate",
+          "2023-01-01"
+         ],
+         [
+          "Name",
+          "Richtlijnen voor de jaarverslaggeving voor kleine rechtspersonen"
+         ],
+         [
+          "Paragraph",
+          "301"
+         ]
+        ],
+        [
+         [
+          "Chapter",
+          "D3.2"
+         ],
+         [
+          "IssueDate",
+          "2023-01-01"
+         ],
+         [
+          "Name",
+          "Richtlijnen voor de jaarverslaggeving voor kleine rechtspersonen"
+         ],
+         [
+          "Paragraph",
+          "303"
+         ]
+        ],
+        [
+         [
+          "Chapter",
+          "D3.2"
+         ],
+         [
+          "IssueDate",
+          "2023-01-01"
+         ],
+         [
+          "Name",
+          "Richtlijnen voor de jaarverslaggeving voor kleine rechtspersonen"
+         ],
+         [
+          "Paragraph",
+          "304"
+         ]
+        ]
+       ]
+      },
+      "groot:EquitySubtotal": {
+       "labels": {
+        "std": {
+         "nl": "Subtotaal"
+        }
+       }
+      },
+      "bw2-titel9:ResultForTheYear": {
+       "labels": {
+        "std": {
+         "en": "Result after taxes for the year",
+         "nl": "Resultaat na belastingen van het boekjaar",
+         "de": "Ergebnis nach Steuern f\u00fcr das Buchungsjahr",
+         "fr": "R\u00e9sultat de l'exercice apr\u00e8s imp\u00f4t"
+        },
+        "doc": {
+         "nl": "Het resultaat na belastingen van het boekjaar, voor zover de bestemming daarvan niet in de balans is verwerkt."
+        }
+       },
+       "r": [
+        [
+         [
+          "Article",
+          "11"
+         ],
+         [
+          "IssueDate",
+          "2015-11-01"
+         ],
+         [
+          "Name",
+          "Besluit modellen jaarrekening"
+         ]
+        ],
+        [
+         [
+          "Article",
+          "373"
+         ],
+         [
+          "IssueDate",
+          "2023-01-01"
+         ],
+         [
+          "Name",
+          "Burgerlijk wetboek boek 2"
+         ],
+         [
+          "Paragraph",
+          "1"
+         ],
+         [
+          "Subparagraph",
+          "g"
+         ]
+        ],
+        [
+         [
+          "Chapter",
+          "240"
+         ],
+         [
+          "IssueDate",
+          "2023-01-01"
+         ],
+         [
+          "Name",
+          "Richtlijnen voor de jaarverslaggeving"
+         ],
+         [
+          "Paragraph",
+          "236"
+         ]
+        ],
+        [
+         [
+          "Chapter",
+          "A8"
+         ],
+         [
+          "IssueDate",
+          "2023-01-01"
+         ],
+         [
+          "Name",
+          "Richtlijnen voor de jaarverslaggeving voor kleine rechtspersonen"
+         ],
+         [
+          "Paragraph",
+          "103"
+         ]
+        ]
+       ]
+      },
+      "rj:PreferredDividendDeductedFromResultForTheYear": {
+       "labels": {
+        "std": {
+         "en": "Preferred dividend deducted from result for the year",
+         "nl": "Uit te keren preferent dividend die in mindering wordt gebracht op het resultaat na belastingen",
+         "fr": "Dividende pr\u00e9f\u00e9rentiel \u00e0 payer qui est d\u00e9duit du r\u00e9sultat apr\u00e8s imp\u00f4t",
+         "de": "Zu zahlende Vorzugsdividende, die vom Ergebnis nach Steuern abgezogen wird"
+        },
+        "ns5": {
+         "en": "Preferred dividend deducted from result for the year",
+         "nl": "Uit te keren preferent dividend die in mindering wordt gebracht op het resultaat na belastingen",
+         "fr": "Dividende pr\u00e9f\u00e9rentiel \u00e0 payer qui est d\u00e9duit du r\u00e9sultat apr\u00e8s imp\u00f4t",
+         "de": "Zu zahlende Vorzugsdividende, die vom Ergebnis nach Steuern abgezogen wird"
+        },
+        "ns6": {
+         "en": "Preferred dividend",
+         "nl": "Preferent dividend",
+         "fr": "Dividende pr\u00e9f\u00e9rentiel",
+         "de": "Vorzugsdividende"
+        },
+        "ns0": {
+         "en": "Preferred dividend",
+         "nl": "Preferent dividend",
+         "fr": "Dividende pr\u00e9f\u00e9rentiel",
+         "de": "Vorzugsdividende"
+        },
+        "doc": {
+         "nl": "Indien de balans voor winstbestemming wordt opgesteld, wordt het als preferent dividend uit te keren bedrag in mindering gebracht op het resultaat na belastingen van het boekjaar waarbij het saldo wordt aangeduid als onverdeelde winst."
+        }
+       },
+       "r": [
+        [
+         [
+          "Chapter",
+          "160"
+         ],
+         [
+          "IssueDate",
+          "2023-01-01"
+         ],
+         [
+          "Name",
+          "Richtlijnen voor de jaarverslaggeving"
+         ],
+         [
+          "Paragraph",
+          "209"
+         ]
+        ]
+       ]
+      },
+      "groot:InterimDividendDeductedFromResultForTheYear": {
+       "labels": {
+        "std": {
+         "nl": "Interim-dividend"
+        }
+       }
+      },
+      "groot:TransferToLegalReserveDeductedFromResultForTheYear": {
+       "labels": {
+        "std": {
+         "nl": "Toevoeging wettelijke reserve"
+        }
+       }
+      },
+      "bw2-titel9:RetainedEarnings": {
+       "labels": {
+        "std": {
+         "en": "Undistributed profit",
+         "nl": "Niet verdeelde winsten",
+         "de": "Gewinnr\u00fccklagen",
+         "fr": "B\u00e9n\u00e9fice non distribu\u00e9"
+        },
+        "ns0": {
+         "en": "Undistributed profit",
+         "nl": "Onverdeelde winst",
+         "de": "Nicht ausgesch\u00fctteter Gewinn",
+         "fr": "B\u00e9n\u00e9fice non distribu\u00e9"
+        },
+        "ns4": {
+         "en": "Undistributed profit",
+         "nl": "Reserve niet verdeelde winsten",
+         "de": "Gewinnr\u00fccklagen",
+         "fr": "B\u00e9n\u00e9fice non distribu\u00e9"
+        },
+        "doc": {
+         "nl": "De onverdeelde winst kan bestaan uit winsten die onderworpen zijn geweest aan winstverdeling en waarvan een deel is overgebleven en uit het resultaat na belastingen over het laatst verstreken boekjaar, wanneer dit niet is opgenomen als aparte post van het eigen vermogen."
+        }
+       },
+       "r": [
+        [
+         [
+          "Article",
+          "1"
+         ],
+         [
+          "IssueDate",
+          "2015-11-01"
+         ],
+         [
+          "Name",
+          "Besluit modellen jaarrekening"
+         ],
+         [
+          "Paragraph",
+          "1"
+         ]
+        ],
+        [
+         [
+          "Article",
+          "1"
+         ],
+         [
+          "IssueDate",
+          "2015-11-01"
+         ],
+         [
+          "Name",
+          "Besluit modellen jaarrekening"
+         ],
+         [
+          "Paragraph",
+          "2"
+         ]
+        ],
+        [
+         [
+          "Article",
+          "16"
+         ],
+         [
+          "IssueDate",
+          "2015-11-01"
+         ],
+         [
+          "Name",
+          "Besluit modellen jaarrekening"
+         ],
+         [
+          "Paragraph",
+          "2"
+         ]
+        ],
+        [
+         [
+          "Article",
+          "16"
+         ],
+         [
+          "IssueDate",
+          "2015-11-01"
+         ],
+         [
+          "Name",
+          "Besluit modellen jaarrekening"
+         ],
+         [
+          "Paragraph",
+          "3"
+         ]
+        ],
+        [
+         [
+          "Article",
+          "16a"
+         ],
+         [
+          "IssueDate",
+          "2015-11-01"
+         ],
+         [
+          "Name",
+          "Besluit modellen jaarrekening"
+         ],
+         [
+          "Paragraph",
+          "2"
+         ]
+        ],
+        [
+         [
+          "Article",
+          "16b"
+         ],
+         [
+          "IssueDate",
+          "2015-11-01"
+         ],
+         [
+          "Name",
+          "Besluit modellen jaarrekening"
+         ],
+         [
+          "Paragraph",
+          "2"
+         ]
+        ],
+        [
+         [
+          "Article",
+          "373"
+         ],
+         [
+          "IssueDate",
+          "2023-01-01"
+         ],
+         [
+          "Name",
+          "Burgerlijk wetboek boek 2"
+         ],
+         [
+          "Paragraph",
+          "1"
+         ],
+         [
+          "Subparagraph",
+          "g"
+         ]
+        ],
+        [
+         [
+          "Article",
+          "396"
+         ],
+         [
+          "IssueDate",
+          "2023-01-01"
+         ],
+         [
+          "Name",
+          "Burgerlijk wetboek boek 2"
+         ],
+         [
+          "Paragraph",
+          "3"
+         ]
+        ],
+        [
+         [
+          "Article",
+          "397"
+         ],
+         [
+          "IssueDate",
+          "2023-01-01"
+         ],
+         [
+          "Name",
+          "Burgerlijk wetboek boek 2"
+         ],
+         [
+          "Paragraph",
+          "5"
+         ]
+        ],
+        [
+         [
+          "Chapter",
+          "160"
+         ],
+         [
+          "IssueDate",
+          "2023-01-01"
+         ],
+         [
+          "Name",
+          "Richtlijnen voor de jaarverslaggeving"
+         ],
+         [
+          "Paragraph",
+          "210"
+         ]
+        ],
+        [
+         [
+          "Chapter",
+          "240"
+         ],
+         [
+          "IssueDate",
+          "2023-01-01"
+         ],
+         [
+          "Name",
+          "Richtlijnen voor de jaarverslaggeving"
+         ],
+         [
+          "Paragraph",
+          "236"
+         ]
+        ],
+        [
+         [
+          "Chapter",
+          "315"
+         ],
+         [
+          "IssueDate",
+          "2023-01-01"
+         ],
+         [
+          "Name",
+          "Richtlijnen voor de jaarverslaggeving"
+         ],
+         [
+          "Paragraph",
+          "201"
+         ]
+        ],
+        [
+         [
+          "Chapter",
+          "600"
+         ],
+         [
+          "IssueDate",
+          "2023-01-01"
+         ],
+         [
+          "Name",
+          "Richtlijnen voor de jaarverslaggeving"
+         ],
+         [
+          "Paragraph",
+          "108"
+         ]
+        ],
+        [
+         [
+          "Chapter",
+          "605"
+         ],
+         [
+          "IssueDate",
+          "2023-01-01"
+         ],
+         [
+          "Name",
+          "Richtlijnen voor de jaarverslaggeving"
+         ],
+         [
+          "Paragraph",
+          "106"
+         ]
+        ],
+        [
+         [
+          "Chapter",
+          "605"
+         ],
+         [
+          "IssueDate",
+          "2023-01-01"
+         ],
+         [
+          "Name",
+          "Richtlijnen voor de jaarverslaggeving"
+         ],
+         [
+          "Paragraph",
+          "221"
+         ]
+        ],
+        [
+         [
+          "Chapter",
+          "B8"
+         ],
+         [
+          "IssueDate",
+          "2023-01-01"
+         ],
+         [
+          "Name",
+          "Richtlijnen voor de jaarverslaggeving voor kleine rechtspersonen"
+         ],
+         [
+          "Paragraph",
+          "103"
+         ]
+        ]
+       ]
+      },
+      "groot:PreferenceSharesMember": {
+       "labels": {
+        "std": {
+         "nl": "Preferente aandelen"
+        }
+       }
+      },
+      "bw2-titel9:ClassesOfEquityAxis": {
+       "labels": {
+        "std": {
+         "en": "Classes of equity",
+         "nl": "Categorie\u00ebn van eigen vermogen",
+         "de": "Eigenkapitalklassen",
+         "fr": "Classes des fonds propres"
+        }
+       },
+       "d": "e"
       },
       "groot:PrioritySharesMember": {
        "labels": {
@@ -67469,7 +69902,7 @@
         }
        }
       },
-      "groot:EquityIterimDividend": {
+      "groot:EquityInterimDividend": {
        "labels": {
         "std": {
          "nl": "Iterim-dividend"
@@ -67502,166 +69935,12 @@
         }
        }
       },
-      "groot:EquityTransferResultToOrtherReserves": {
+      "groot:EquityTransferResultToOtherReserves": {
        "labels": {
         "std": {
          "nl": "Aanvulling overige reserves uit hoofde van resultaatbestemming"
         }
        }
-      },
-      "bw2-titel9:ShareCapitalMember": {
-       "labels": {
-        "std": {
-         "en": "Share capital",
-         "nl": "Aandelenkapitaal",
-         "de": "Grundkapital",
-         "fr": "Capital-actions"
-        },
-        "ns3": {
-         "en": "Total of share capital",
-         "nl": "Totaal van aandelenkapitaal",
-         "de": "Gesamtbetrag des Grundkapitals",
-         "fr": "Total du capital social"
-        },
-        "ns4": {
-         "en": "Issued share capital",
-         "nl": "Het geplaatste kapitaal",
-         "de": "Eingezahltes und gezeichnetes Grundkapital",
-         "fr": "Capital-actions lib\u00e9r\u00e9 et appel\u00e9"
-        }
-       },
-       "r": [
-        [
-         [
-          "Article",
-          "373"
-         ],
-         [
-          "IssueDate",
-          "2023-01-01"
-         ],
-         [
-          "Name",
-          "Burgerlijk wetboek boek 2"
-         ],
-         [
-          "Paragraph",
-          "1"
-         ],
-         [
-          "Subparagraph",
-          "a"
-         ]
-        ],
-        [
-         [
-          "Article",
-          "378"
-         ],
-         [
-          "IssueDate",
-          "2023-01-01"
-         ],
-         [
-          "Name",
-          "Burgerlijk wetboek boek 2"
-         ],
-         [
-          "Paragraph",
-          "1"
-         ]
-        ],
-        [
-         [
-          "Chapter",
-          "240"
-         ],
-         [
-          "IssueDate",
-          "2023-01-01"
-         ],
-         [
-          "Name",
-          "Richtlijnen voor de jaarverslaggeving"
-         ],
-         [
-          "Paragraph",
-          "203"
-         ]
-        ],
-        [
-         [
-          "Chapter",
-          "240"
-         ],
-         [
-          "IssueDate",
-          "2023-01-01"
-         ],
-         [
-          "Name",
-          "Richtlijnen voor de jaarverslaggeving"
-         ],
-         [
-          "Paragraph",
-          "237"
-         ]
-        ],
-        [
-         [
-          "Chapter",
-          "B8"
-         ],
-         [
-          "IssueDate",
-          "2023-01-01"
-         ],
-         [
-          "Name",
-          "Richtlijnen voor de jaarverslaggeving voor kleine rechtspersonen"
-         ],
-         [
-          "Paragraph",
-          "103"
-         ]
-        ],
-        [
-         [
-          "Chapter",
-          "B8"
-         ],
-         [
-          "IssueDate",
-          "2023-01-01"
-         ],
-         [
-          "Name",
-          "Richtlijnen voor de jaarverslaggeving voor kleine rechtspersonen"
-         ],
-         [
-          "Paragraph",
-          "104"
-         ]
-        ],
-        [
-         [
-          "Chapter",
-          "D3.2"
-         ],
-         [
-          "IssueDate",
-          "2023-01-01"
-         ],
-         [
-          "Name",
-          "Richtlijnen voor de jaarverslaggeving voor kleine rechtspersonen"
-         ],
-         [
-          "Paragraph",
-          "303"
-         ]
-        ]
-       ]
       },
       "bw2-titel9:DevelopmentCosts": {
        "labels": {
@@ -68050,6 +70329,435 @@
         }
        }
       },
+      "rj:EquityTransfers": {
+       "labels": {
+        "std": {
+         "en": "Movement in equity as a result of transfers",
+         "nl": "Mutatie in het eigen vermogen als gevolg van overboekingen",
+         "fr": "Mouvement de capitaux propres en raison de transferts",
+         "de": "Ver\u00e4nderung im Eigenkapital als Ergebnis von \u00dcbertragungen"
+        },
+        "ns0": {
+         "en": "Transfers",
+         "nl": "Overboekingen",
+         "fr": "Transferts",
+         "de": "\u00dcbertragungen"
+        },
+        "doc": {
+         "nl": "De overboekingen tussen de verschillende categorie\u00ebn van het eigen vermogen, anders dan de overboekingen van en naar het resultaat."
+        }
+       }
+      },
+      "bw2-titel9:BalanceSheetTitle": {
+       "labels": {
+        "std": {
+         "en": "Balance sheet",
+         "nl": "Balans",
+         "de": "Bilanz",
+         "fr": "Bilan"
+        }
+       }
+      },
+      "bw2-titel9:ReceivablesShareholdersParticipatingInterestsNoncurrent": {
+       "labels": {
+        "std": {
+         "en": "Non-current receivables from other legal entities and companies with a participating interest in the legal entity or from participating interests of the legal entity",
+         "nl": "Langlopende vorderingen op andere rechtspersonen en vennootschappen die een deelneming hebben in de rechtspersoon of waarin de rechtspersoon een deelneming heeft",
+         "de": "Langfristige Forderungen gegen\u00fcber anderen K\u00f6rperschaften und Unternehmen mit einer Beteiligungen an der K\u00f6rperschaft oder gegen\u00fcber Beteiligungen an der K\u00f6rperschaft",
+         "fr": "R\u00e9clamation sur d'autres entit\u00e9s juridiques et soci\u00e9t\u00e9s ayant une participation dans la personne morale ou dans laquelle la personne morale a une participation"
+        },
+        "ns0": {
+         "en": "Receivables from other legal entities and companies with a participating interest in the legal entity or from participating interests of the legal entity",
+         "nl": "Vorderingen op andere rechtspersonen en vennootschappen die een deelneming hebben in de rechtspersoon of waarin de rechtspersoon een deelneming heeft",
+         "de": "Forderungen gegen\u00fcber anderen K\u00f6rperschaften und Unternehmen mit einer Beteiligungen an der K\u00f6rperschaft oder gegen\u00fcber Beteiligungen an der K\u00f6rperschaft",
+         "fr": "R\u00e9clamation sur d'autres entit\u00e9s juridiques et soci\u00e9t\u00e9s ayant une participation dans la personne morale ou dans laquelle la personne morale a une participation"
+        },
+        "ns4": {
+         "en": "Receivables from participating interests",
+         "nl": "Vorderingen op maatschappijen waarin wordt deelgenomen",
+         "de": "Forderungen aus Beteiligungen",
+         "fr": "Cr\u00e9ances sur participations"
+        },
+        "doc": {
+         "nl": "Langlopende vorderingen op andere rechtspersonen en vennootschappen die een deelneming hebben in de rechtspersoon of waarin de rechtspersoon een deelneming heeft."
+        }
+       },
+       "r": [
+        [
+         [
+          "Article",
+          "1"
+         ],
+         [
+          "IssueDate",
+          "2015-11-01"
+         ],
+         [
+          "Name",
+          "Besluit modellen jaarrekening"
+         ],
+         [
+          "Paragraph",
+          "1"
+         ]
+        ],
+        [
+         [
+          "Article",
+          "8"
+         ],
+         [
+          "IssueDate",
+          "2015-11-01"
+         ],
+         [
+          "Name",
+          "Besluit modellen jaarrekening"
+         ],
+         [
+          "Paragraph",
+          "1"
+         ]
+        ],
+        [
+         [
+          "Article",
+          "367"
+         ],
+         [
+          "IssueDate",
+          "2023-01-01"
+         ],
+         [
+          "Name",
+          "Burgerlijk wetboek boek 2"
+         ],
+         [
+          "Paragraph",
+          "d"
+         ]
+        ],
+        [
+         [
+          "Article",
+          "397"
+         ],
+         [
+          "IssueDate",
+          "2023-01-01"
+         ],
+         [
+          "Name",
+          "Burgerlijk wetboek boek 2"
+         ],
+         [
+          "Paragraph",
+          "5"
+         ]
+        ],
+        [
+         [
+          "Chapter",
+          "214"
+         ],
+         [
+          "IssueDate",
+          "2023-01-01"
+         ],
+         [
+          "Name",
+          "Richtlijnen voor de jaarverslaggeving"
+         ],
+         [
+          "Paragraph",
+          "603"
+         ]
+        ],
+        [
+         [
+          "Chapter",
+          "222"
+         ],
+         [
+          "IssueDate",
+          "2023-01-01"
+         ],
+         [
+          "Name",
+          "Richtlijnen voor de jaarverslaggeving"
+         ],
+         [
+          "Paragraph",
+          "305"
+         ]
+        ],
+        [
+         [
+          "Chapter",
+          "315"
+         ],
+         [
+          "IssueDate",
+          "2023-01-01"
+         ],
+         [
+          "Name",
+          "Richtlijnen voor de jaarverslaggeving"
+         ],
+         [
+          "Paragraph",
+          "201"
+         ]
+        ]
+       ]
+      },
+      "rj:CashFlowStatementTitle": {
+       "labels": {
+        "std": {
+         "en": "Cash flow statement",
+         "nl": "Kasstroomoverzicht",
+         "fr": "\u00c9tat de flux de tr\u00e9sorerie",
+         "de": "Kapitalflussrechnung"
+        }
+       }
+      },
+      "rj:PaymentsProvisionRepaymentLongTermLoans": {
+       "labels": {
+        "std": {
+         "en": "Expenses in connection with the provision and repayment of long-term loans granted by the legal entity",
+         "nl": "Uitgaven in het kader van de verstrekking en aflossing van door de rechtspersoon verstrekte lange termijn leningen",
+         "fr": "D\u00e9penses li\u00e9es \u00e0 la provision et au remboursement de pr\u00eats \u00e0 long terme accord\u00e9s par l'entit\u00e9 juridique",
+         "de": "Aufwendungen im Zusammenhang mit der Bereitstellung und R\u00fcckzahlung von langfristigen Darlehen, die von der juristischen Person gew\u00e4hrt werden"
+        },
+        "ns5": {
+         "en": "Expenses in connection with the provision and repayment of long-term loans granted by the legal entity",
+         "nl": "Uitgaven in het kader van de verstrekking en aflossing van door de rechtspersoon verstrekte lange termijn leningen",
+         "fr": "D\u00e9penses li\u00e9es \u00e0 la provision et au remboursement de pr\u00eats \u00e0 long terme accord\u00e9s par l'entit\u00e9 juridique",
+         "de": "Aufwendungen im Zusammenhang mit der Bereitstellung und R\u00fcckzahlung von langfristigen Darlehen, die von der juristischen Person gew\u00e4hrt werden"
+        },
+        "doc": {
+         "nl": "De uitgaven in het kader van de verstrekking en aflossing van door de rechtspersoon verstrekte lange termijn leningen"
+        }
+       },
+       "r": [
+        [
+         [
+          "Chapter",
+          "360"
+         ],
+         [
+          "IssueDate",
+          "2023-01-01"
+         ],
+         [
+          "Name",
+          "Richtlijnen voor de jaarverslaggeving"
+         ],
+         [
+          "Paragraph",
+          "217"
+         ]
+        ]
+       ]
+      },
+      "kvk:DocumentEntityInformationTitle": {
+       "labels": {
+        "std": {
+         "nl": "Informatie over de rapportage en de rechtspersoon",
+         "en": "Document and entity information",
+         "fr": "Informations sur le reporting et l'entreprise dot\u00e9e de la personnalit\u00e9 juridique",
+         "de": "Informationen \u00fcber die Berichterstattung und die juristische Person"
+        }
+       }
+      },
+      "bw2-titel9:EquityStatementOfChangesTable": {
+       "labels": {
+        "std": {
+         "en": "Equity: Statement of changes [table]",
+         "nl": "Eigen vermogen: Mutatieoverzicht [tabel]"
+        }
+       }
+      },
+      "bw2-titel9:EquityStatementOfChangesTitle": {
+       "labels": {
+        "std": {
+         "en": "Equity: Statement of changes",
+         "nl": "Eigen vermogen: Mutatieoverzicht",
+         "de": "Eigenkapital: Mutations\u00fcbersicht",
+         "fr": "Capitaux propres: \u00c9tat du mouvement"
+        }
+       }
+      },
+      "bw2-titel9:ShareCapitalMember": {
+       "labels": {
+        "std": {
+         "en": "Share capital",
+         "nl": "Aandelenkapitaal",
+         "de": "Grundkapital",
+         "fr": "Capital-actions"
+        },
+        "ns3": {
+         "en": "Total of share capital",
+         "nl": "Totaal van aandelenkapitaal",
+         "de": "Gesamtbetrag des Grundkapitals",
+         "fr": "Total du capital social"
+        },
+        "ns4": {
+         "en": "Issued share capital",
+         "nl": "Het geplaatste kapitaal",
+         "de": "Eingezahltes und gezeichnetes Grundkapital",
+         "fr": "Capital-actions lib\u00e9r\u00e9 et appel\u00e9"
+        }
+       },
+       "r": [
+        [
+         [
+          "Article",
+          "373"
+         ],
+         [
+          "IssueDate",
+          "2023-01-01"
+         ],
+         [
+          "Name",
+          "Burgerlijk wetboek boek 2"
+         ],
+         [
+          "Paragraph",
+          "1"
+         ],
+         [
+          "Subparagraph",
+          "a"
+         ]
+        ],
+        [
+         [
+          "Article",
+          "378"
+         ],
+         [
+          "IssueDate",
+          "2023-01-01"
+         ],
+         [
+          "Name",
+          "Burgerlijk wetboek boek 2"
+         ],
+         [
+          "Paragraph",
+          "1"
+         ]
+        ],
+        [
+         [
+          "Chapter",
+          "240"
+         ],
+         [
+          "IssueDate",
+          "2023-01-01"
+         ],
+         [
+          "Name",
+          "Richtlijnen voor de jaarverslaggeving"
+         ],
+         [
+          "Paragraph",
+          "203"
+         ]
+        ],
+        [
+         [
+          "Chapter",
+          "240"
+         ],
+         [
+          "IssueDate",
+          "2023-01-01"
+         ],
+         [
+          "Name",
+          "Richtlijnen voor de jaarverslaggeving"
+         ],
+         [
+          "Paragraph",
+          "237"
+         ]
+        ],
+        [
+         [
+          "Chapter",
+          "B8"
+         ],
+         [
+          "IssueDate",
+          "2023-01-01"
+         ],
+         [
+          "Name",
+          "Richtlijnen voor de jaarverslaggeving voor kleine rechtspersonen"
+         ],
+         [
+          "Paragraph",
+          "103"
+         ]
+        ],
+        [
+         [
+          "Chapter",
+          "B8"
+         ],
+         [
+          "IssueDate",
+          "2023-01-01"
+         ],
+         [
+          "Name",
+          "Richtlijnen voor de jaarverslaggeving voor kleine rechtspersonen"
+         ],
+         [
+          "Paragraph",
+          "104"
+         ]
+        ],
+        [
+         [
+          "Chapter",
+          "D3.2"
+         ],
+         [
+          "IssueDate",
+          "2023-01-01"
+         ],
+         [
+          "Name",
+          "Richtlijnen voor de jaarverslaggeving voor kleine rechtspersonen"
+         ],
+         [
+          "Paragraph",
+          "303"
+         ]
+        ]
+       ]
+      },
+      "bw2-titel9:EquityStatementOfChangesLineItems": {
+       "labels": {
+        "std": {
+         "en": "Statement of changes equity [line items]",
+         "nl": "Mutatieoverzicht eigen vermogen [line items]"
+        }
+       }
+      },
+      "bw2-titel9:ChangesInEquityTitle": {
+       "labels": {
+        "std": {
+         "en": "Changes in equity",
+         "nl": "Verandering in eigen vermogen"
+        }
+       }
+      },
       "bw2-titel9:RevaluationReserveMember": {
        "labels": {
         "std": {
@@ -68376,262 +71084,6 @@
         ]
        ]
       },
-      "bw2-titel9:BalanceSheetTitle": {
-       "labels": {
-        "std": {
-         "en": "Balance sheet",
-         "nl": "Balans",
-         "de": "Bilanz",
-         "fr": "Bilan"
-        }
-       }
-      },
-      "bw2-titel9:ReceivablesShareholdersParticipatingInterestsNoncurrent": {
-       "labels": {
-        "std": {
-         "en": "Non-current receivables from other legal entities and companies with a participating interest in the legal entity or from participating interests of the legal entity",
-         "nl": "Langlopende vorderingen op andere rechtspersonen en vennootschappen die een deelneming hebben in de rechtspersoon of waarin de rechtspersoon een deelneming heeft",
-         "de": "Langfristige Forderungen gegen\u00fcber anderen K\u00f6rperschaften und Unternehmen mit einer Beteiligungen an der K\u00f6rperschaft oder gegen\u00fcber Beteiligungen an der K\u00f6rperschaft",
-         "fr": "R\u00e9clamation sur d'autres entit\u00e9s juridiques et soci\u00e9t\u00e9s ayant une participation dans la personne morale ou dans laquelle la personne morale a une participation"
-        },
-        "ns0": {
-         "en": "Receivables from other legal entities and companies with a participating interest in the legal entity or from participating interests of the legal entity",
-         "nl": "Vorderingen op andere rechtspersonen en vennootschappen die een deelneming hebben in de rechtspersoon of waarin de rechtspersoon een deelneming heeft",
-         "de": "Forderungen gegen\u00fcber anderen K\u00f6rperschaften und Unternehmen mit einer Beteiligungen an der K\u00f6rperschaft oder gegen\u00fcber Beteiligungen an der K\u00f6rperschaft",
-         "fr": "R\u00e9clamation sur d'autres entit\u00e9s juridiques et soci\u00e9t\u00e9s ayant une participation dans la personne morale ou dans laquelle la personne morale a une participation"
-        },
-        "ns4": {
-         "en": "Receivables from participating interests",
-         "nl": "Vorderingen op maatschappijen waarin wordt deelgenomen",
-         "de": "Forderungen aus Beteiligungen",
-         "fr": "Cr\u00e9ances sur participations"
-        },
-        "doc": {
-         "nl": "Langlopende vorderingen op andere rechtspersonen en vennootschappen die een deelneming hebben in de rechtspersoon of waarin de rechtspersoon een deelneming heeft."
-        }
-       },
-       "r": [
-        [
-         [
-          "Article",
-          "1"
-         ],
-         [
-          "IssueDate",
-          "2015-11-01"
-         ],
-         [
-          "Name",
-          "Besluit modellen jaarrekening"
-         ],
-         [
-          "Paragraph",
-          "1"
-         ]
-        ],
-        [
-         [
-          "Article",
-          "8"
-         ],
-         [
-          "IssueDate",
-          "2015-11-01"
-         ],
-         [
-          "Name",
-          "Besluit modellen jaarrekening"
-         ],
-         [
-          "Paragraph",
-          "1"
-         ]
-        ],
-        [
-         [
-          "Article",
-          "367"
-         ],
-         [
-          "IssueDate",
-          "2023-01-01"
-         ],
-         [
-          "Name",
-          "Burgerlijk wetboek boek 2"
-         ],
-         [
-          "Paragraph",
-          "d"
-         ]
-        ],
-        [
-         [
-          "Article",
-          "397"
-         ],
-         [
-          "IssueDate",
-          "2023-01-01"
-         ],
-         [
-          "Name",
-          "Burgerlijk wetboek boek 2"
-         ],
-         [
-          "Paragraph",
-          "5"
-         ]
-        ],
-        [
-         [
-          "Chapter",
-          "214"
-         ],
-         [
-          "IssueDate",
-          "2023-01-01"
-         ],
-         [
-          "Name",
-          "Richtlijnen voor de jaarverslaggeving"
-         ],
-         [
-          "Paragraph",
-          "603"
-         ]
-        ],
-        [
-         [
-          "Chapter",
-          "222"
-         ],
-         [
-          "IssueDate",
-          "2023-01-01"
-         ],
-         [
-          "Name",
-          "Richtlijnen voor de jaarverslaggeving"
-         ],
-         [
-          "Paragraph",
-          "305"
-         ]
-        ],
-        [
-         [
-          "Chapter",
-          "315"
-         ],
-         [
-          "IssueDate",
-          "2023-01-01"
-         ],
-         [
-          "Name",
-          "Richtlijnen voor de jaarverslaggeving"
-         ],
-         [
-          "Paragraph",
-          "201"
-         ]
-        ]
-       ]
-      },
-      "rj:CashFlowStatementTitle": {
-       "labels": {
-        "std": {
-         "en": "Cash flow statement",
-         "nl": "Kasstroomoverzicht",
-         "fr": "\u00c9tat de flux de tr\u00e9sorerie",
-         "de": "Kapitalflussrechnung"
-        }
-       }
-      },
-      "rj:PaymentsProvisionRepaymentLongTermLoans": {
-       "labels": {
-        "std": {
-         "en": "Expenses in connection with the provision and repayment of long-term loans granted by the legal entity",
-         "nl": "Uitgaven in het kader van de verstrekking en aflossing van door de rechtspersoon verstrekte lange termijn leningen",
-         "fr": "D\u00e9penses li\u00e9es \u00e0 la provision et au remboursement de pr\u00eats \u00e0 long terme accord\u00e9s par l'entit\u00e9 juridique",
-         "de": "Aufwendungen im Zusammenhang mit der Bereitstellung und R\u00fcckzahlung von langfristigen Darlehen, die von der juristischen Person gew\u00e4hrt werden"
-        },
-        "ns5": {
-         "en": "Expenses in connection with the provision and repayment of long-term loans granted by the legal entity",
-         "nl": "Uitgaven in het kader van de verstrekking en aflossing van door de rechtspersoon verstrekte lange termijn leningen",
-         "fr": "D\u00e9penses li\u00e9es \u00e0 la provision et au remboursement de pr\u00eats \u00e0 long terme accord\u00e9s par l'entit\u00e9 juridique",
-         "de": "Aufwendungen im Zusammenhang mit der Bereitstellung und R\u00fcckzahlung von langfristigen Darlehen, die von der juristischen Person gew\u00e4hrt werden"
-        },
-        "doc": {
-         "nl": "De uitgaven in het kader van de verstrekking en aflossing van door de rechtspersoon verstrekte lange termijn leningen"
-        }
-       },
-       "r": [
-        [
-         [
-          "Chapter",
-          "360"
-         ],
-         [
-          "IssueDate",
-          "2023-01-01"
-         ],
-         [
-          "Name",
-          "Richtlijnen voor de jaarverslaggeving"
-         ],
-         [
-          "Paragraph",
-          "217"
-         ]
-        ]
-       ]
-      },
-      "kvk:DocumentEntityInformationTitle": {
-       "labels": {
-        "std": {
-         "nl": "Informatie over de rapportage en de rechtspersoon",
-         "en": "Document and entity information",
-         "fr": "Informations sur le reporting et l'entreprise dot\u00e9e de la personnalit\u00e9 juridique",
-         "de": "Informationen \u00fcber die Berichterstattung und die juristische Person"
-        }
-       }
-      },
-      "bw2-titel9:EquityStatementOfChangesTable": {
-       "labels": {
-        "std": {
-         "en": "Equity: Statement of changes [table]",
-         "nl": "Eigen vermogen: Mutatieoverzicht [tabel]"
-        }
-       }
-      },
-      "bw2-titel9:EquityStatementOfChangesTitle": {
-       "labels": {
-        "std": {
-         "en": "Equity: Statement of changes",
-         "nl": "Eigen vermogen: Mutatieoverzicht",
-         "de": "Eigenkapital: Mutations\u00fcbersicht",
-         "fr": "Capitaux propres: \u00c9tat du mouvement"
-        }
-       }
-      },
-      "bw2-titel9:EquityStatementOfChangesLineItems": {
-       "labels": {
-        "std": {
-         "en": "Statement of changes equity [line items]",
-         "nl": "Mutatieoverzicht eigen vermogen [line items]"
-        }
-       }
-      },
-      "bw2-titel9:ChangesInEquityTitle": {
-       "labels": {
-        "std": {
-         "en": "Changes in equity",
-         "nl": "Verandering in eigen vermogen"
-        }
-       }
-      },
       "bw2-titel9:EquityMember": {
        "labels": {
         "std": {
@@ -68850,99 +71302,6 @@
          "fr": "\u00c9tat du r\u00e9sultat total"
         }
        }
-      },
-      "bw2-titel9:NetOperatingResult": {
-       "labels": {
-        "std": {
-         "en": "Net operating result",
-         "nl": "Netto-omzetresultaat",
-         "de": "Nettobetriebsergebnis",
-         "fr": "R\u00e9sultat net d'exploitation"
-        },
-        "ns3": {
-         "en": "Total of net operating result",
-         "nl": "Totaal van netto-omzetresultaat",
-         "de": "Gesamtbetrag des Nettobetriebsergebnis",
-         "fr": "Total des r\u00e9sultat net d'exploitation"
-        },
-        "doc": {
-         "nl": "Het saldo van de baten en lasten die direct voortvloeien uit de levering van goederen en diensten uit het bedrijf van de rechtspersoon, en onder aftrek van de bedrijfslasten."
-        }
-       },
-       "r": [
-        [
-         [
-          "Article",
-          "1"
-         ],
-         [
-          "IssueDate",
-          "2015-11-01"
-         ],
-         [
-          "Name",
-          "Besluit modellen jaarrekening"
-         ],
-         [
-          "Paragraph",
-          "1"
-         ]
-        ],
-        [
-         [
-          "Article",
-          "1"
-         ],
-         [
-          "IssueDate",
-          "2015-11-01"
-         ],
-         [
-          "Name",
-          "Besluit modellen jaarrekening"
-         ],
-         [
-          "Paragraph",
-          "2"
-         ]
-        ],
-        [
-         [
-          "Article",
-          "14"
-         ],
-         [
-          "IssueDate",
-          "2015-11-01"
-         ],
-         [
-          "Name",
-          "Besluit modellen jaarrekening"
-         ]
-        ],
-        [
-         [
-          "Article",
-          "377"
-         ],
-         [
-          "IssueDate",
-          "2023-01-01"
-         ],
-         [
-          "Name",
-          "Burgerlijk wetboek boek 2"
-         ],
-         [
-          "Paragraph",
-          "1"
-         ],
-         [
-          "Subparagraph",
-          "a"
-         ]
-        ]
-       ]
       },
       "bw2-titel9:FinancialAssetsMember": {
        "labels": {
@@ -69249,6 +71608,99 @@
          "fr": "Classes des pr\u00eats, avances et garanties"
         }
        }
+      },
+      "bw2-titel9:NetOperatingResult": {
+       "labels": {
+        "std": {
+         "en": "Net operating result",
+         "nl": "Netto-omzetresultaat",
+         "de": "Nettobetriebsergebnis",
+         "fr": "R\u00e9sultat net d'exploitation"
+        },
+        "ns3": {
+         "en": "Total of net operating result",
+         "nl": "Totaal van netto-omzetresultaat",
+         "de": "Gesamtbetrag des Nettobetriebsergebnis",
+         "fr": "Total des r\u00e9sultat net d'exploitation"
+        },
+        "doc": {
+         "nl": "Het saldo van de baten en lasten die direct voortvloeien uit de levering van goederen en diensten uit het bedrijf van de rechtspersoon, en onder aftrek van de bedrijfslasten."
+        }
+       },
+       "r": [
+        [
+         [
+          "Article",
+          "1"
+         ],
+         [
+          "IssueDate",
+          "2015-11-01"
+         ],
+         [
+          "Name",
+          "Besluit modellen jaarrekening"
+         ],
+         [
+          "Paragraph",
+          "1"
+         ]
+        ],
+        [
+         [
+          "Article",
+          "1"
+         ],
+         [
+          "IssueDate",
+          "2015-11-01"
+         ],
+         [
+          "Name",
+          "Besluit modellen jaarrekening"
+         ],
+         [
+          "Paragraph",
+          "2"
+         ]
+        ],
+        [
+         [
+          "Article",
+          "14"
+         ],
+         [
+          "IssueDate",
+          "2015-11-01"
+         ],
+         [
+          "Name",
+          "Besluit modellen jaarrekening"
+         ]
+        ],
+        [
+         [
+          "Article",
+          "377"
+         ],
+         [
+          "IssueDate",
+          "2023-01-01"
+         ],
+         [
+          "Name",
+          "Burgerlijk wetboek boek 2"
+         ],
+         [
+          "Paragraph",
+          "1"
+         ],
+         [
+          "Subparagraph",
+          "a"
+         ]
+        ]
+       ]
       }
      },
      "facts": {
@@ -69258,7 +71710,7 @@
         "e": "e:12345678",
         "p": "2023-01-01/2024-01-01"
        },
-       "v": "De Grote"
+       "v": "De Grote B.V."
       },
       "ID000020": {
        "a": {
@@ -69285,15 +71737,6 @@
        "v": "true",
        "f": "ixt:fixed-true"
       },
-      "ID000080": {
-       "a": {
-        "c": "rj:FinancialStatementsConsolidated",
-        "e": "e:12345678",
-        "p": "2023-01-01/2024-01-01"
-       },
-       "v": "true",
-       "f": "ixt:fixed-true"
-      },
       "ID000040": {
        "a": {
         "c": "bw2-titel9:ChamberOfCommerceRegistrationNumber",
@@ -69301,6 +71744,15 @@
         "p": "2023-01-01/2024-01-01"
        },
        "v": "12345678"
+      },
+      "ID000090": {
+       "a": {
+        "c": "bw2-titel9:DocumentAdoptionStatus",
+        "e": "e:12345678",
+        "p": "2023-01-01/2024-01-01"
+       },
+       "v": "true",
+       "f": "ixt:fixed-true"
       },
       "ID0000100": {
        "a": {
@@ -69311,9 +71763,9 @@
        "v": "2024-03-19",
        "f": "ixt:date-day-monthname-year-nl"
       },
-      "ID000090": {
+      "ID000080": {
        "a": {
-        "c": "bw2-titel9:DocumentAdoptionStatus",
+        "c": "rj:FinancialStatementsConsolidated",
         "e": "e:12345678",
         "p": "2023-01-01/2024-01-01"
        },
@@ -71075,6 +73527,30 @@
        "f": "ixt:num-dot-decimal",
        "d": -3
       },
+      "ID0002585": {
+       "a": {
+        "c": "groot:CashFlowOperatingActivitiesSubtotal",
+        "e": "e:12345678",
+        "u": "iso4217:EUR",
+        "bw2-titel9:FinancialStatementsTypeAxis": "bw2-titel9:ConsolidatedMember",
+        "p": "2023-01-01/2024-01-01"
+       },
+       "v": "0",
+       "f": "ixt:num-dot-decimal",
+       "d": -3
+      },
+      "ID0002595": {
+       "a": {
+        "c": "groot:CashFlowOperatingActivitiesSubtotal",
+        "e": "e:12345678",
+        "u": "iso4217:EUR",
+        "bw2-titel9:FinancialStatementsTypeAxis": "bw2-titel9:ConsolidatedMember",
+        "p": "2022-01-01/2023-01-01"
+       },
+       "v": "0",
+       "f": "ixt:num-dot-decimal",
+       "d": -3
+      },
       "ID0002580": {
        "a": {
         "c": "rj:CashFlowOperatingActivities",
@@ -72443,78 +74919,6 @@
        "f": "ixt:num-dot-decimal",
        "d": -3
       },
-      "ID0003730": {
-       "a": {
-        "c": "bw2-titel9:FinancialAssets",
-        "e": "e:12345678",
-        "u": "iso4217:EUR",
-        "bw2-titel9:FinancialStatementsTypeAxis": "bw2-titel9:ConsolidatedMember",
-        "p": "2023-01-01"
-       },
-       "v": "0",
-       "f": "ixt:num-dot-decimal",
-       "d": -3
-      },
-      "ID0003740": {
-       "a": {
-        "c": "bw2-titel9:FinancialAssets",
-        "e": "e:12345678",
-        "u": "iso4217:EUR",
-        "bw2-titel9:FinancialStatementsTypeAxis": "bw2-titel9:ConsolidatedMember",
-        "p": "2023-01-01"
-       },
-       "v": "0",
-       "f": "ixt:num-dot-decimal",
-       "d": -3
-      },
-      "ID0003750": {
-       "a": {
-        "c": "bw2-titel9:FinancialAssets",
-        "e": "e:12345678",
-        "u": "iso4217:EUR",
-        "bw2-titel9:FinancialStatementsTypeAxis": "bw2-titel9:ConsolidatedMember",
-        "p": "2023-01-01"
-       },
-       "v": "0",
-       "f": "ixt:num-dot-decimal",
-       "d": -3
-      },
-      "ID0003760": {
-       "a": {
-        "c": "bw2-titel9:FinancialAssets",
-        "e": "e:12345678",
-        "u": "iso4217:EUR",
-        "bw2-titel9:FinancialStatementsTypeAxis": "bw2-titel9:ConsolidatedMember",
-        "p": "2023-01-01"
-       },
-       "v": "0",
-       "f": "ixt:num-dot-decimal",
-       "d": -3
-      },
-      "ID0003770": {
-       "a": {
-        "c": "bw2-titel9:FinancialAssets",
-        "e": "e:12345678",
-        "u": "iso4217:EUR",
-        "bw2-titel9:FinancialStatementsTypeAxis": "bw2-titel9:ConsolidatedMember",
-        "p": "2023-01-01"
-       },
-       "v": "0",
-       "f": "ixt:num-dot-decimal",
-       "d": -3
-      },
-      "ID0003780": {
-       "a": {
-        "c": "bw2-titel9:FinancialAssets",
-        "e": "e:12345678",
-        "u": "iso4217:EUR",
-        "bw2-titel9:FinancialStatementsTypeAxis": "bw2-titel9:ConsolidatedMember",
-        "p": "2023-01-01"
-       },
-       "v": "0",
-       "f": "ixt:num-dot-decimal",
-       "d": -3
-      },
       "ID0003790": {
        "a": {
         "c": "bw2-titel9:InventoryRawMaterialsConsumables",
@@ -72818,30 +75222,6 @@
       "ID0004050": {
        "a": {
         "c": "bw2-titel9:Receivables",
-        "e": "e:12345678",
-        "u": "iso4217:EUR",
-        "bw2-titel9:FinancialStatementsTypeAxis": "bw2-titel9:ConsolidatedMember",
-        "p": "2023-01-01"
-       },
-       "v": "0",
-       "f": "ixt:num-dot-decimal",
-       "d": -3
-      },
-      "ID0004070": {
-       "a": {
-        "c": "bw2-titel9:SecuritiesCurrent",
-        "e": "e:12345678",
-        "u": "iso4217:EUR",
-        "bw2-titel9:FinancialStatementsTypeAxis": "bw2-titel9:ConsolidatedMember",
-        "p": "2024-01-01"
-       },
-       "v": "0",
-       "f": "ixt:num-dot-decimal",
-       "d": -3
-      },
-      "ID0004080": {
-       "a": {
-        "c": "bw2-titel9:SecuritiesCurrent",
         "e": "e:12345678",
         "u": "iso4217:EUR",
         "bw2-titel9:FinancialStatementsTypeAxis": "bw2-titel9:ConsolidatedMember",
@@ -73758,6 +76138,342 @@
         "u": "iso4217:EUR",
         "bw2-titel9:FinancialStatementsTypeAxis": "bw2-titel9:ConsolidatedMember",
         "p": "2023-01-01/2024-01-01"
+       },
+       "v": "0",
+       "f": "ixt:num-dot-decimal",
+       "d": -3
+      },
+      "ID0010090": {
+       "a": {
+        "c": "bw2-titel9:ShareCapitalPaidCalledUp",
+        "e": "e:12345678",
+        "u": "iso4217:EUR",
+        "bw2-titel9:FinancialStatementsTypeAxis": "bw2-titel9:SeparateMember",
+        "p": "2024-01-01"
+       },
+       "v": "0",
+       "f": "ixt:num-dot-decimal",
+       "d": -3
+      },
+      "ID0010100": {
+       "a": {
+        "c": "bw2-titel9:ShareCapitalPaidCalledUp",
+        "e": "e:12345678",
+        "u": "iso4217:EUR",
+        "bw2-titel9:FinancialStatementsTypeAxis": "bw2-titel9:SeparateMember",
+        "p": "2023-01-01"
+       },
+       "v": "0",
+       "f": "ixt:num-dot-decimal",
+       "d": -3
+      },
+      "ID0010110": {
+       "a": {
+        "c": "bw2-titel9:SharePremium",
+        "e": "e:12345678",
+        "u": "iso4217:EUR",
+        "bw2-titel9:FinancialStatementsTypeAxis": "bw2-titel9:SeparateMember",
+        "p": "2024-01-01"
+       },
+       "v": "0",
+       "f": "ixt:num-dot-decimal",
+       "d": -3
+      },
+      "ID0010120": {
+       "a": {
+        "c": "bw2-titel9:SharePremium",
+        "e": "e:12345678",
+        "u": "iso4217:EUR",
+        "bw2-titel9:FinancialStatementsTypeAxis": "bw2-titel9:SeparateMember",
+        "p": "2023-01-01"
+       },
+       "v": "0",
+       "f": "ixt:num-dot-decimal",
+       "d": -3
+      },
+      "ID0010130": {
+       "a": {
+        "c": "bw2-titel9:RevaluationReserve",
+        "e": "e:12345678",
+        "u": "iso4217:EUR",
+        "bw2-titel9:FinancialStatementsTypeAxis": "bw2-titel9:SeparateMember",
+        "p": "2024-01-01"
+       },
+       "v": "0",
+       "f": "ixt:num-dot-decimal",
+       "d": -3
+      },
+      "ID0010140": {
+       "a": {
+        "c": "bw2-titel9:RevaluationReserve",
+        "e": "e:12345678",
+        "u": "iso4217:EUR",
+        "bw2-titel9:FinancialStatementsTypeAxis": "bw2-titel9:SeparateMember",
+        "p": "2023-01-01"
+       },
+       "v": "0",
+       "f": "ixt:num-dot-decimal",
+       "d": -3
+      },
+      "ID0010150": {
+       "a": {
+        "c": "bw2-titel9:LegalReserves",
+        "e": "e:12345678",
+        "u": "iso4217:EUR",
+        "bw2-titel9:FinancialStatementsTypeAxis": "bw2-titel9:SeparateMember",
+        "p": "2024-01-01"
+       },
+       "v": "0",
+       "f": "ixt:num-dot-decimal",
+       "d": -3
+      },
+      "ID0010160": {
+       "a": {
+        "c": "bw2-titel9:LegalReserves",
+        "e": "e:12345678",
+        "u": "iso4217:EUR",
+        "bw2-titel9:FinancialStatementsTypeAxis": "bw2-titel9:SeparateMember",
+        "p": "2023-01-01"
+       },
+       "v": "0",
+       "f": "ixt:num-dot-decimal",
+       "d": -3
+      },
+      "ID0010170": {
+       "a": {
+        "c": "bw2-titel9:StatutoryReserves",
+        "e": "e:12345678",
+        "u": "iso4217:EUR",
+        "bw2-titel9:FinancialStatementsTypeAxis": "bw2-titel9:SeparateMember",
+        "p": "2024-01-01"
+       },
+       "v": "0",
+       "f": "ixt:num-dot-decimal",
+       "d": -3
+      },
+      "ID0010180": {
+       "a": {
+        "c": "bw2-titel9:StatutoryReserves",
+        "e": "e:12345678",
+        "u": "iso4217:EUR",
+        "bw2-titel9:FinancialStatementsTypeAxis": "bw2-titel9:SeparateMember",
+        "p": "2023-01-01"
+       },
+       "v": "0",
+       "f": "ixt:num-dot-decimal",
+       "d": -3
+      },
+      "ID0010190": {
+       "a": {
+        "c": "groot:FinancialInstrumentsEconomicRealityClassifiedAsLiability",
+        "e": "e:12345678",
+        "u": "iso4217:EUR",
+        "bw2-titel9:FinancialStatementsTypeAxis": "bw2-titel9:SeparateMember",
+        "p": "2024-01-01"
+       },
+       "v": "0",
+       "f": "ixt:num-dot-decimal",
+       "d": -3
+      },
+      "ID0010200": {
+       "a": {
+        "c": "groot:FinancialInstrumentsEconomicRealityClassifiedAsLiability",
+        "e": "e:12345678",
+        "u": "iso4217:EUR",
+        "bw2-titel9:FinancialStatementsTypeAxis": "bw2-titel9:SeparateMember",
+        "p": "2023-01-01"
+       },
+       "v": "0",
+       "f": "ixt:num-dot-decimal",
+       "d": -3
+      },
+      "ID0010210": {
+       "a": {
+        "c": "bw2-titel9:ReservesOther",
+        "e": "e:12345678",
+        "u": "iso4217:EUR",
+        "bw2-titel9:FinancialStatementsTypeAxis": "bw2-titel9:SeparateMember",
+        "p": "2024-01-01"
+       },
+       "v": "0",
+       "f": "ixt:num-dot-decimal",
+       "d": -3
+      },
+      "ID0010220": {
+       "a": {
+        "c": "bw2-titel9:ReservesOther",
+        "e": "e:12345678",
+        "u": "iso4217:EUR",
+        "bw2-titel9:FinancialStatementsTypeAxis": "bw2-titel9:SeparateMember",
+        "p": "2023-01-01"
+       },
+       "v": "0",
+       "f": "ixt:num-dot-decimal",
+       "d": -3
+      },
+      "ID0010230": {
+       "a": {
+        "c": "groot:EquitySubtotal",
+        "e": "e:12345678",
+        "u": "iso4217:EUR",
+        "bw2-titel9:FinancialStatementsTypeAxis": "bw2-titel9:SeparateMember",
+        "p": "2024-01-01"
+       },
+       "v": "0",
+       "f": "ixt:num-dot-decimal",
+       "d": -3
+      },
+      "ID0010240": {
+       "a": {
+        "c": "groot:EquitySubtotal",
+        "e": "e:12345678",
+        "u": "iso4217:EUR",
+        "bw2-titel9:FinancialStatementsTypeAxis": "bw2-titel9:SeparateMember",
+        "p": "2023-01-01"
+       },
+       "v": "0",
+       "f": "ixt:num-dot-decimal",
+       "d": -3
+      },
+      "ID0010250": {
+       "a": {
+        "c": "bw2-titel9:ResultForTheYear",
+        "e": "e:12345678",
+        "u": "iso4217:EUR",
+        "bw2-titel9:FinancialStatementsTypeAxis": "bw2-titel9:SeparateMember",
+        "p": "2024-01-01"
+       },
+       "v": "0",
+       "f": "ixt:num-dot-decimal",
+       "d": -3
+      },
+      "ID0010260": {
+       "a": {
+        "c": "bw2-titel9:ResultForTheYear",
+        "e": "e:12345678",
+        "u": "iso4217:EUR",
+        "bw2-titel9:FinancialStatementsTypeAxis": "bw2-titel9:SeparateMember",
+        "p": "2023-01-01"
+       },
+       "v": "0",
+       "f": "ixt:num-dot-decimal",
+       "d": -3
+      },
+      "ID0010270": {
+       "a": {
+        "c": "rj:PreferredDividendDeductedFromResultForTheYear",
+        "e": "e:12345678",
+        "u": "iso4217:EUR",
+        "bw2-titel9:FinancialStatementsTypeAxis": "bw2-titel9:SeparateMember",
+        "p": "2024-01-01"
+       },
+       "v": "0",
+       "f": "ixt:num-dot-decimal",
+       "d": -3
+      },
+      "ID0010280": {
+       "a": {
+        "c": "rj:PreferredDividendDeductedFromResultForTheYear",
+        "e": "e:12345678",
+        "u": "iso4217:EUR",
+        "bw2-titel9:FinancialStatementsTypeAxis": "bw2-titel9:SeparateMember",
+        "p": "2023-01-01"
+       },
+       "v": "0",
+       "f": "ixt:num-dot-decimal",
+       "d": -3
+      },
+      "ID0010290": {
+       "a": {
+        "c": "groot:InterimDividendDeductedFromResultForTheYear",
+        "e": "e:12345678",
+        "u": "iso4217:EUR",
+        "bw2-titel9:FinancialStatementsTypeAxis": "bw2-titel9:SeparateMember",
+        "p": "2024-01-01"
+       },
+       "v": "0",
+       "f": "ixt:num-dot-decimal",
+       "d": -3
+      },
+      "ID0010300": {
+       "a": {
+        "c": "groot:InterimDividendDeductedFromResultForTheYear",
+        "e": "e:12345678",
+        "u": "iso4217:EUR",
+        "bw2-titel9:FinancialStatementsTypeAxis": "bw2-titel9:SeparateMember",
+        "p": "2023-01-01"
+       },
+       "v": "0",
+       "f": "ixt:num-dot-decimal",
+       "d": -3
+      },
+      "ID0010310": {
+       "a": {
+        "c": "groot:TransferToLegalReserveDeductedFromResultForTheYear",
+        "e": "e:12345678",
+        "u": "iso4217:EUR",
+        "bw2-titel9:FinancialStatementsTypeAxis": "bw2-titel9:SeparateMember",
+        "p": "2024-01-01"
+       },
+       "v": "0",
+       "f": "ixt:num-dot-decimal",
+       "d": -3
+      },
+      "ID0010320": {
+       "a": {
+        "c": "groot:TransferToLegalReserveDeductedFromResultForTheYear",
+        "e": "e:12345678",
+        "u": "iso4217:EUR",
+        "bw2-titel9:FinancialStatementsTypeAxis": "bw2-titel9:SeparateMember",
+        "p": "2023-01-01"
+       },
+       "v": "0",
+       "f": "ixt:num-dot-decimal",
+       "d": -3
+      },
+      "ID0010330": {
+       "a": {
+        "c": "bw2-titel9:RetainedEarnings",
+        "e": "e:12345678",
+        "u": "iso4217:EUR",
+        "bw2-titel9:FinancialStatementsTypeAxis": "bw2-titel9:SeparateMember",
+        "p": "2024-01-01"
+       },
+       "v": "0",
+       "f": "ixt:num-dot-decimal",
+       "d": -3
+      },
+      "ID0010340": {
+       "a": {
+        "c": "bw2-titel9:RetainedEarnings",
+        "e": "e:12345678",
+        "u": "iso4217:EUR",
+        "bw2-titel9:FinancialStatementsTypeAxis": "bw2-titel9:SeparateMember",
+        "p": "2023-01-01"
+       },
+       "v": "0",
+       "f": "ixt:num-dot-decimal",
+       "d": -3
+      },
+      "ID0010350": {
+       "a": {
+        "c": "bw2-titel9:Equity",
+        "e": "e:12345678",
+        "u": "iso4217:EUR",
+        "bw2-titel9:FinancialStatementsTypeAxis": "bw2-titel9:SeparateMember",
+        "p": "2024-01-01"
+       },
+       "v": "0",
+       "f": "ixt:num-dot-decimal",
+       "d": -3
+      },
+      "ID0010360": {
+       "a": {
+        "c": "bw2-titel9:Equity",
+        "e": "e:12345678",
+        "u": "iso4217:EUR",
+        "bw2-titel9:FinancialStatementsTypeAxis": "bw2-titel9:SeparateMember",
+        "p": "2023-01-01"
        },
        "v": "0",
        "f": "ixt:num-dot-decimal",
@@ -79971,7 +82687,7 @@
       },
       "ID0009210": {
        "a": {
-        "c": "groot:EquityIterimDividend",
+        "c": "groot:EquityInterimDividend",
         "e": "e:12345678",
         "u": "iso4217:EUR",
         "bw2-titel9:ClassesOfEquityAxis": "bw2-titel9:ReservesOtherMember",
@@ -79984,7 +82700,7 @@
       },
       "ID0009220": {
        "a": {
-        "c": "groot:EquityIterimDividend",
+        "c": "groot:EquityInterimDividend",
         "e": "e:12345678",
         "u": "iso4217:EUR",
         "bw2-titel9:ClassesOfEquityAxis": "bw2-titel9:RetainedEarningsMember",
@@ -79997,7 +82713,7 @@
       },
       "ID0009230": {
        "a": {
-        "c": "groot:EquityIterimDividend",
+        "c": "groot:EquityInterimDividend",
         "e": "e:12345678",
         "u": "iso4217:EUR",
         "bw2-titel9:FinancialStatementsTypeAxis": "bw2-titel9:SeparateMember",
@@ -80085,7 +82801,7 @@
       },
       "ID0009300": {
        "a": {
-        "c": "groot:EquityTransferResultToOrtherReserves",
+        "c": "groot:EquityTransferResultToOtherReserves",
         "e": "e:12345678",
         "u": "iso4217:EUR",
         "bw2-titel9:ClassesOfEquityAxis": "bw2-titel9:ReservesOtherMember",
@@ -80098,7 +82814,7 @@
       },
       "ID0009310": {
        "a": {
-        "c": "groot:EquityTransferResultToOrtherReserves",
+        "c": "groot:EquityTransferResultToOtherReserves",
         "e": "e:12345678",
         "u": "iso4217:EUR",
         "bw2-titel9:ClassesOfEquityAxis": "bw2-titel9:RetainedEarningsMember",
@@ -80111,7 +82827,7 @@
       },
       "ID0009320": {
        "a": {
-        "c": "groot:EquityTransferResultToOrtherReserves",
+        "c": "groot:EquityTransferResultToOtherReserves",
         "e": "e:12345678",
         "u": "iso4217:EUR",
         "bw2-titel9:FinancialStatementsTypeAxis": "bw2-titel9:SeparateMember",
@@ -80845,7 +83561,7 @@
       },
       "ID0009910": {
        "a": {
-        "c": "groot:EquityIterimDividend",
+        "c": "groot:EquityInterimDividend",
         "e": "e:12345678",
         "u": "iso4217:EUR",
         "bw2-titel9:ClassesOfEquityAxis": "bw2-titel9:ReservesOtherMember",
@@ -80858,7 +83574,7 @@
       },
       "ID0009920": {
        "a": {
-        "c": "groot:EquityIterimDividend",
+        "c": "groot:EquityInterimDividend",
         "e": "e:12345678",
         "u": "iso4217:EUR",
         "bw2-titel9:ClassesOfEquityAxis": "bw2-titel9:RetainedEarningsMember",
@@ -80871,7 +83587,7 @@
       },
       "ID0009930": {
        "a": {
-        "c": "groot:EquityIterimDividend",
+        "c": "groot:EquityInterimDividend",
         "e": "e:12345678",
         "u": "iso4217:EUR",
         "bw2-titel9:FinancialStatementsTypeAxis": "bw2-titel9:SeparateMember",
@@ -80959,7 +83675,7 @@
       },
       "ID0010000": {
        "a": {
-        "c": "groot:EquityTransferResultToOrtherReserves",
+        "c": "groot:EquityTransferResultToOtherReserves",
         "e": "e:12345678",
         "u": "iso4217:EUR",
         "bw2-titel9:ClassesOfEquityAxis": "bw2-titel9:ReservesOtherMember",
@@ -80972,7 +83688,7 @@
       },
       "ID0010010": {
        "a": {
-        "c": "groot:EquityTransferResultToOrtherReserves",
+        "c": "groot:EquityTransferResultToOtherReserves",
         "e": "e:12345678",
         "u": "iso4217:EUR",
         "bw2-titel9:ClassesOfEquityAxis": "bw2-titel9:RetainedEarningsMember",
@@ -80985,7 +83701,7 @@
       },
       "ID0010020": {
        "a": {
-        "c": "groot:EquityTransferResultToOrtherReserves",
+        "c": "groot:EquityTransferResultToOtherReserves",
         "e": "e:12345678",
         "u": "iso4217:EUR",
         "bw2-titel9:FinancialStatementsTypeAxis": "bw2-titel9:SeparateMember",
@@ -81105,15 +83821,15 @@
      "rels": {
       "w-n": {
        "ns8": {
-        "bw2-titel9:ShareCapitalMember": [
+        "bw2-titel9:Equity": [
          {
-          "t": "groot:PreferenceSharesMember"
+          "t": "groot:FinancialInstrumentsEconomicRealityClassifiedAsLiability"
          },
          {
-          "t": "groot:PrioritySharesMember"
+          "t": "groot:InterimDividendDeductedFromResultForTheYear"
          },
          {
-          "t": "groot:FinancialInstrumentsEconomicRealityClassifiedAsLiabilityMember"
+          "t": "groot:TransferToLegalReserveDeductedFromResultForTheYear"
          }
         ],
         "rj:ProvisionRestructuring": [
@@ -81156,6 +83872,32 @@
           "t": "groot:EquityInvestments"
          },
          {
+          "t": "groot:EquityShareInResultParticipatingInterests"
+         },
+         {
+          "t": "groot:EquityFinalOptionDividend"
+         },
+         {
+          "t": "groot:EquityPreferredDividend"
+         },
+         {
+          "t": "groot:EquityStockdividend"
+         },
+         {
+          "t": "groot:EquityInterimDividend"
+         },
+         {
+          "t": "groot:EquityLoanConversion"
+         },
+         {
+          "t": "groot:EquitySharesStamping"
+         },
+         {
+          "t": "groot:EquitySharesRedeeming"
+         }
+        ],
+        "rj:EquityTransfers": [
+         {
           "t": "groot:EquityTransferFromLegalStatutoryReserves"
          },
          {
@@ -81171,38 +83913,10 @@
           "t": "groot:EquityTransferToUndistributedProfit"
          },
          {
-          "t": "groot:EquityShareInResultParticipatingInterests"
-         },
-         {
           "t": "groot:EquityTransferToRevaluationReserves"
          },
          {
-          "t": "groot:EquityTransferResultToOrtherReserves"
-         },
-         {
-          "t": "groot:EquityFinalOptionDividend"
-         },
-         {
-          "t": "groot:EquityPreferredDividend"
-         },
-         {
-          "t": "groot:EquityStockdividend"
-         },
-         {
-          "t": "groot:EquityIterimDividend"
-         }
-        ],
-        "bw2-titel9:RevaluationReserveMember": [
-         {
-          "t": "groot:CashFlowHedgeMember"
-         },
-         {
-          "t": "groot:FinancialInstrumentsOtherMember"
-         }
-        ],
-        "bw2-titel9:LegalReservesMember": [
-         {
-          "t": "groot:LegalReserveParticipatingInterestsMember"
+          "t": "groot:EquityTransferResultToOtherReserves"
          }
         ]
        }
@@ -81341,6 +84055,45 @@
          },
          {
           "t": "bw2-titel9:EquityGroup"
+         },
+         {
+          "t": "bw2-titel9:ShareCapitalPaidCalledUp"
+         },
+         {
+          "t": "bw2-titel9:SharePremium"
+         },
+         {
+          "t": "bw2-titel9:RevaluationReserve"
+         },
+         {
+          "t": "bw2-titel9:LegalReserves"
+         },
+         {
+          "t": "bw2-titel9:StatutoryReserves"
+         },
+         {
+          "t": "groot:FinancialInstrumentsEconomicRealityClassifiedAsLiability"
+         },
+         {
+          "t": "bw2-titel9:ReservesOther"
+         },
+         {
+          "t": "groot:EquitySubtotal"
+         },
+         {
+          "t": "bw2-titel9:ResultForTheYear"
+         },
+         {
+          "t": "rj:PreferredDividendDeductedFromResultForTheYear"
+         },
+         {
+          "t": "groot:InterimDividendDeductedFromResultForTheYear"
+         },
+         {
+          "t": "groot:TransferToLegalReserveDeductedFromResultForTheYear"
+         },
+         {
+          "t": "bw2-titel9:RetainedEarnings"
          },
          {
           "t": "bw2-titel9:Provisions"
@@ -81507,6 +84260,9 @@
          },
          {
           "t": "rj:IncomeTaxPaidClassifiedAsOperatingActivities"
+         },
+         {
+          "t": "groot:CashFlowOperatingActivitiesSubtotal"
          },
          {
           "t": "rj:CashFlowOperatingActivities"
@@ -81846,7 +84602,7 @@
           "t": "groot:EquityPreferredDividend"
          },
          {
-          "t": "groot:EquityIterimDividend"
+          "t": "groot:EquityInterimDividend"
          },
          {
           "t": "rj:EquityResultAllocation"
@@ -81855,7 +84611,7 @@
           "t": "groot:EquityFinalOptionDividend"
          },
          {
-          "t": "groot:EquityTransferResultToOrtherReserves"
+          "t": "groot:EquityTransferResultToOtherReserves"
          },
          {
           "t": "bw2-titel9:RevaluationReserveRevaluationsTaxImpact"
@@ -82020,6 +84776,50 @@
        }
       },
       "calc": {
+       "ns10": {
+        "rj:CashFlowOperatingActivities": [
+         {
+          "t": "groot:CashFlowOperatingActivitiesSubtotal",
+          "w": 1.0
+         }
+        ]
+       }
+      },
+      "d-d": {
+       "ns16": {
+        "bw2-titel9:ClassesOfEquityAxis": [
+         {
+          "t": "bw2-titel9:EquityMember"
+         }
+        ],
+        "bw2-titel9:ClassesOfFinancialAssetsAxis": [
+         {
+          "t": "bw2-titel9:FinancialAssetsMember"
+         }
+        ],
+        "bw2-titel9:ClassesOfIntangibleAssetsAxis": [
+         {
+          "t": "bw2-titel9:IntangibleAssetsMember"
+         }
+        ],
+        "bw2-titel9:ClassesOfPropertyPlantEquipmentAxis": [
+         {
+          "t": "bw2-titel9:PropertyPlantEquipmentMember"
+         }
+        ],
+        "bw2-titel9:ClassesOfShareCapitalAxis": [
+         {
+          "t": "bw2-titel9:ShareCapitalMember"
+         }
+        ],
+        "bw2-titel9:ClassesOfLoansAdvancesGuaranteesAxis": [
+         {
+          "t": "bw2-titel9:LoansAdvancesGuaranteesMember"
+         }
+        ]
+       }
+      },
+      "calc11": {
        "ns9": {
         "bw2-titel9:Assets": [
          {
@@ -82320,6 +85120,64 @@
           "t": "bw2-titel9:NoncontrollingInterest",
           "w": 1.0
          }
+        ],
+        "bw2-titel9:RetainedEarnings": [
+         {
+          "t": "bw2-titel9:ResultForTheYear",
+          "w": 1.0
+         },
+         {
+          "t": "rj:PreferredDividendDeductedFromResultForTheYear",
+          "w": -1.0
+         },
+         {
+          "t": "groot:InterimDividendDeductedFromResultForTheYear",
+          "w": -1.0
+         },
+         {
+          "t": "groot:TransferToLegalReserveDeductedFromResultForTheYear",
+          "w": -1.0
+         }
+        ],
+        "bw2-titel9:Equity": [
+         {
+          "t": "groot:EquitySubtotal",
+          "w": 1.0
+         },
+         {
+          "t": "bw2-titel9:RetainedEarnings",
+          "w": 1.0
+         }
+        ],
+        "groot:EquitySubtotal": [
+         {
+          "t": "bw2-titel9:ShareCapitalPaidCalledUp",
+          "w": 1.0
+         },
+         {
+          "t": "bw2-titel9:SharePremium",
+          "w": 1.0
+         },
+         {
+          "t": "bw2-titel9:RevaluationReserve",
+          "w": 1.0
+         },
+         {
+          "t": "bw2-titel9:LegalReserves",
+          "w": 1.0
+         },
+         {
+          "t": "bw2-titel9:StatutoryReserves",
+          "w": 1.0
+         },
+         {
+          "t": "groot:FinancialInstrumentsEconomicRealityClassifiedAsLiability",
+          "w": 1.0
+         },
+         {
+          "t": "bw2-titel9:ReservesOther",
+          "w": 1.0
+         }
         ]
        },
        "ns10": {
@@ -82351,26 +85209,6 @@
          {
           "t": "rj:CashFlowFromOperations",
           "w": 1.0
-         },
-         {
-          "t": "rj:InterestReceivedClassifiedAsOperatingActivities",
-          "w": 1.0
-         },
-         {
-          "t": "rj:DividendsReceivedClassifiedAsOperatingActivities",
-          "w": 1.0
-         },
-         {
-          "t": "rj:IncomeTaxReceivedClassifiedAsOperatingActivities",
-          "w": 1.0
-         },
-         {
-          "t": "rj:InterestPaidClassifiedAsOperatingActivities",
-          "w": -1.0
-         },
-         {
-          "t": "rj:IncomeTaxPaidClassifiedAsOperatingActivities",
-          "w": -1.0
          }
         ],
         "rj:AdjustmentsReconcileOperatingResult": [
@@ -82433,6 +85271,28 @@
          {
           "t": "rj:ChangesWorkingCapital",
           "w": 1.0
+         }
+        ],
+        "groot:CashFlowOperatingActivitiesSubtotal": [
+         {
+          "t": "rj:InterestReceivedClassifiedAsOperatingActivities",
+          "w": 1.0
+         },
+         {
+          "t": "rj:DividendsReceivedClassifiedAsOperatingActivities",
+          "w": 1.0
+         },
+         {
+          "t": "rj:IncomeTaxReceivedClassifiedAsOperatingActivities",
+          "w": 1.0
+         },
+         {
+          "t": "rj:InterestPaidClassifiedAsOperatingActivities",
+          "w": -1.0
+         },
+         {
+          "t": "rj:IncomeTaxPaidClassifiedAsOperatingActivities",
+          "w": -1.0
          }
         ],
         "rj:CashFlowInvestingActivities": [
@@ -82679,7 +85539,7 @@
           "w": -1.0
          },
          {
-          "t": "groot:EquityIterimDividend",
+          "t": "groot:EquityInterimDividend",
           "w": -1.0
          },
          {
@@ -82691,7 +85551,7 @@
           "w": -1.0
          },
          {
-          "t": "groot:EquityTransferResultToOrtherReserves",
+          "t": "groot:EquityTransferResultToOtherReserves",
           "w": 1.0
          },
          {
@@ -82887,40 +85747,6 @@
          {
           "t": "rj:AdjustmentsRecycleItems",
           "w": -1.0
-         }
-        ]
-       }
-      },
-      "d-d": {
-       "ns16": {
-        "bw2-titel9:ClassesOfEquityAxis": [
-         {
-          "t": "bw2-titel9:EquityMember"
-         }
-        ],
-        "bw2-titel9:ClassesOfFinancialAssetsAxis": [
-         {
-          "t": "bw2-titel9:FinancialAssetsMember"
-         }
-        ],
-        "bw2-titel9:ClassesOfIntangibleAssetsAxis": [
-         {
-          "t": "bw2-titel9:IntangibleAssetsMember"
-         }
-        ],
-        "bw2-titel9:ClassesOfPropertyPlantEquipmentAxis": [
-         {
-          "t": "bw2-titel9:PropertyPlantEquipmentMember"
-         }
-        ],
-        "bw2-titel9:ClassesOfShareCapitalAxis": [
-         {
-          "t": "bw2-titel9:ShareCapitalMember"
-         }
-        ],
-        "bw2-titel9:ClassesOfLoansAdvancesGuaranteesAxis": [
-         {
-          "t": "bw2-titel9:LoansAdvancesGuaranteesMember"
          }
         ]
        }
